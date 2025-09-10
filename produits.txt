@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Andu Xara 2025</title>
+    <style>
+        /* Bandeau défilant FONCTIONNEL */
+        .marquee-container {
+            background: linear-gradient(90deg, #ff0066, #ff6600, #ffcc00, #66cc00, #0066ff, #6600ff);
+            color: white;
+            padding: 12px 0;
+            overflow: hidden;
+            position: relative;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .marquee {
+            white-space: nowrap;
+            display: inline-block;
+            animation: marquee-scroll 20s linear infinite;
+            padding-left: 100%;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-right: 30px;
+        }
+
+        @keyframes marquee-scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .marquee {
+                animation-duration: 15s;
+            }
+        }
+
+        /* Styles principaux */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .search-bar input {
+            padding: 12px 20px;
+            width: 100%;
+            max-width: 500px;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+        }
+        
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .category-btn {
+            padding: 8px 20px;
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .category-btn:hover, .category-btn.active {
+            background-color: #6a11cb;
+            color: white;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .product-description {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .product-price {
+            font-weight: bold;
+            color: #6a11cb;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .add-to-cart {
+            width: 100%;
+            padding: 10px;
+            background-color: #6a11cb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .add-to-cart:hover {
+            background-color: #2575fc;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .categories {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .category-btn {
+                width: 80%;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Texte défilant en haut de la page -->
+    <div class="marquee-container">
+        <div class="marquee">
+            <span>🌟 PROMOTION EXCEPTIONNELLE : 30% DE RÉDUCTION SUR TOUT LE CATALOGUE - OFFRE VALABLE JUSQU'AU 31 DÉCEMBRE 2025 🌟</span>
+        </div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <h1>Catalogue Andu Xara 2025</h1>
+            <p class="subtitle">Découvrez nos produits exclusifs pour l'année 2025</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher un produit..." id="search-input">
+        </div>
+        
+        <div class="categories">
+            <button class="category-btn active">Tous</button>
+            <button class="category-btn">T-shirts</button>
+            <button class="category-btn">Ensembles</button>
+            <button class="category-btn">Enfants</button>
+        </div>
+        
+        <div class="products-grid" id="products-container">
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <img src="images/t-shirt%20logo%20arabe.jpeg" alt="T-shirt logo arabe" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">T-shirt logo arabe</h3>
+                    <p class="product-description">T-shirt coton avec logo arabe design exclusif</p>
+                    <p class="product-price">499 Mru</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <img src="images/Ensemble%20capuchon%20arabe.jpeg" alt="Ensemble capuche style arabe" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Ensemble capuche style arabe</h3>
+                    <p class="product-description">Ensemble complet avec capuchon style arabe</p>
+                    <p class="product-price">599 Mru</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="product-card">
+                <img src="images/Combinaison%20.jpeg" alt="Combinaison T-shirt et Capuche" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Combinaison T-shirt et Capuche</h3>
+                    <p class="product-description">T-shirt coton et Capuche Bleu</p>
+                    <p class="product-price">599 Mru</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="product-card">
+                <img src="images/T-shirt%20Enfant.jpeg" alt="T-shirt Enfant" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">T-shirt Enfant</h3>
+                    <p class="product-description">T-shirt coton pour ton enfant</p>
+                    <p class="product-price">399 Mru</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <!-- Produit 5 -->
+            <div class="product-card">
+                <img src="images/T-shirt%20blanc%20jogging%20noir%20.jpeg" alt="Ensemble T-shirt et jogging" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Ensemble T-shirt et jogging</h3>
+                    <p class="product-description">Ensemble coton pour toi</p>
+                    <p class="product-price">799 Mru</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <!-- Produit 6 -->
+            <div class="product-card">
+                <img src="images/WhatsApp%20Image%202025-09-02%20at%2022.19.56(2).jpeg" alt="Pull bleu" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Pull bleu</h3>
+                    <p class="product-description">Pull chaud et confortable de couleur bleue</p>
+                    <p class="product-price">699 Mru</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <!-- Produit 7 -->
+            <div class="product-card">
+                <img src="images/WhatsApp%20Image%202025-09-02%20at%2022.19.55(1).jpeg" alt="T-shirt design premium" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">T-shirt design premium</h3>
+                    <p class="product-description">T-shirt haut de gamme avec design exclusif</p>
+                    <p class="product-price">599 Mru</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <!-- Produit 8 -->
+            <div class="product-card">
+                <img src="images/WhatsApp%20Image%202025-09-02%20at%2022.19.58.jpeg" alt="Ensemble sportif" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Ensemble sportif</h3>
+                    <p class="product-description">Parfait pour les activités sportives</p>
+                    <p class="product-price">899 Mru</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Andu Xara - Tous droits réservés</p>
+            <p>Contact: anduxara2408@gmail.com | Tel: +222 49 03 76 97</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fonctionnalité de recherche
+        document.getElementById('search-input').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const products = document.querySelectorAll('.product-card');
+            
+            products.forEach(product => {
+                const title = product.querySelector('.product-title').textContent.toLowerCase();
+                const description = product.querySelector('.product-description').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+        
+        // Fonctionnalité des catégories
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const category = this.textContent;
+                const products = document.querySelectorAll('.product-card');
+                
+                products.forEach(product => {
+                    if (category === 'Tous') {
+                        product.style.display = 'block';
+                    } else {
+                        // Simuler un filtrage par catégorie
+                        product.style.display = 'block';
+                    }
+                });
+            });
+        });
+        
+        // Fonctionnalité d'ajout au panier
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const product = this.closest('.product-card');
+                const productName = product.querySelector('.product-title').textContent;
+                alert(`${productName} a été ajouté au panier !`);
+            });
+        });
+    </script>
+</body>
+</html>

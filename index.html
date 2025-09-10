@@ -1,384 +1,2190 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue Andu-xara - Collection Exclusive</title>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalogue Andu-Xara 2025</title>
+<meta name="description" content="Catalogue Andu-Xara 2025 - Vêtements exclusifs mauritaniens. T-shirts, ensembles et vêtements enfants en promotion">
+<meta name="keywords" content="andu-xara, vêtements mauritaniens, mode afrique, t-shirts mauritanie, ensembles, vêtements enfants, mode nouakchott">
+<meta name="author" content="Andu-Xara">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Catalogue Andu-Xara 2025 - Vêtements Exclusifs">
+<meta property="og:description" content="Découvrez nos collections exclusives de vêtements mauritaniens pour 2025. T-shirts, ensembles et vêtements">
+<meta property="og:image" content="https://andu-xara.github.io/catalogue-andu-xara-2025-final/images/logo.png">
+<meta property="og:url" content="https://andu-xara.github.io/catalogue-andu-xara-2025-final/">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catalogue Andu-Xara 2025">
+<meta name="twitter:description" content="Vêtements exclusifs mauritaniens - Collections 2025">
+<meta name="twitter:image" content="https://andu-xara.github.io/catalogue-andu-xara-2025-final/images/logo.png">
+
+<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#6a11cb">
+
+   <style>
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
         }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .social-icons {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            display: flex;
-            gap: 12px;
-        }
-        
-        .social-icons a {
-            width: 35px;
-            height: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        
-        .social-icons a:hover {
-            background: white;
-            transform: scale(1.15);
-        }
-        
-        .social-icons svg {
-            width: 20px;
-            height: 20px;
-            fill: white;
-        }
-        
-        .social-icons a:hover svg {
-            fill: #2c3e50;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 300;
-        }
-        
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-            margin-bottom: 10px;
-        }
-        
-        /* Animation texte défilant */
-        .welcome-banner {
-            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+
+        /* ===== BANDEAU DÉFILANT ===== */
+        .marquee-container {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
             color: white;
             padding: 12px 0;
-            margin: 20px 0;
-            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+            position: relative;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            width: 100%;
+            z-index: 1000;
         }
-        
-        .scrolling-text {
+
+        .marquee-content {
+            display: flex;
+            animation: marquee-scroll 40s linear infinite;
             white-space: nowrap;
-            animation: scroll-text 25s linear infinite;
-            font-size: 1.1em;
-            font-weight: 500;
-            padding: 5px 0;
         }
-        
-        @keyframes scroll-text {
+
+        .marquee-section {
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            height: 100%;
+        }
+
+        .welcome {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            padding: 6px 20px;
+            border-radius: 18px;
+            font-size: 14px;
+        }
+
+        .promotion {
+            background: linear-gradient(90deg, #ff0066, #ff6600);
+            padding: 6px 20px;
+            border-radius: 18px;
+            font-size: 14px;
+        }
+
+        .original {
+            background: linear-gradient(90deg, #00b09b, #96c93d);
+            padding: 6px 20px;
+            border-radius: 18px;
+            font-size: 14px;
+        }
+
+        @keyframes marquee-scroll {
             0% { transform: translateX(100%); }
             100% { transform: translateX(-100%); }
         }
-        
-        .scrolling-text:hover {
-            animation-play-state: paused;
+
+        /* ===== HEADER ===== */
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
-        
-        .catalogue {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 40px;
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
         }
-        
-        .produit {
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            flex-shrink: 0;
+        }
+
+        .logo-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            border: 2px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
+
+        .header-text {
+            text-align: center;
+            flex: 1;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        /* ===== PANIER ET WISHLIST ===== */
+        .cart-icon {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
             background: white;
+            padding: 12px 16px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            font-size: 16px;
+            z-index: 10000;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .wishlist-icon {
+            position: fixed;
+            bottom: 80px;
+            left: 20px;
+            background: white;
+            padding: 12px 16px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            font-size: 16px;
+            z-index: 10000;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cart-icon:hover, .wishlist-icon:hover {
+            transform: scale(1.05);
+        }
+
+        #cart-counter, #wishlist-counter {
+            background: #ff0066;
+            color: white;
+            border-radius: 50%;
+            padding: 4px 8px;
+            font-size: 12px;
+            font-weight: bold;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        /* ===== RECHERCHE ET CATÉGORIES ===== */
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input {
+            padding: 12px 20px;
+            width: 100%;
+            max-width: 500px;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            outline: none;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .search-bar input:focus {
+            box-shadow: 0 4px 15px rgba(106, 17, 203, 0.2);
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .category-btn {
+            padding: 8px 18px;
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .category-btn:hover, .category-btn.active {
+            background-color: #6a11cb;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+        }
+
+        /* ===== BANNIÈRES CATÉGORIES ===== */
+        .category-banners {
+            margin: 30px 0;
+        }
+
+        .category-banner {
+            position: relative;
+            height: 200px;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border: 1px solid #eee;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
         }
-        
-        .produit:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+
+        .category-banner:hover {
+            transform: scale(1.02);
         }
-        
-        .produit-image {
+
+        .category-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.8));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .banner-content h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .banner-content p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* ===== PRODUITS ===== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image-container {
+            position: relative;
             width: 100%;
             height: 250px;
+            overflow: hidden;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            border-bottom: 3px solid #667eea;
+            transition: transform 0.5s ease;
         }
-        
-        .produit-content {
-            padding: 25px;
+
+        .product-card:hover .product-image {
+            transform: scale(1.05);
         }
-        
-        .produit h2 {
-            font-size: 1.4em;
-            color: #2c3e50;
+
+        .wishlist-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 2;
+            font-size: 18px;
+        }
+
+        .wishlist-btn:hover {
+            background: #ff0066;
+            color: white;
+        }
+
+        .wishlist-btn.active {
+            background: #ff0066;
+            color: white;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
             margin-bottom: 10px;
+            color: #2c3e50;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .product-description {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #6a11cb;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .product-variations {
+            margin-bottom: 15px;
+        }
+
+        .variation-selector {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .variation-selector span {
+            font-weight: 500;
+            color: #5a67d8;
+            font-size: 0.9rem;
+        }
+
+        .variation-btn {
+            padding: 6px 12px;
+            border: 2px solid #e2e8f0;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+        }
+
+        .variation-btn:hover, .variation-btn.active {
+            border-color: #6a11cb;
+            background: #6a11cb;
+            color: white;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .add-to-cart {
+            flex: 1;
+            padding: 12px;
+            background-color: #6a11cb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1rem;
             font-weight: 600;
         }
-        
-        .produit .description {
-            color: #7f8c8d;
-            line-height: 1.6;
-            margin-bottom: 15px;
-            font-size: 0.95em;
-        }
-        
-        .produit .reference {
-            color: #95a5a6;
-            font-size: 0.85em;
-            margin-bottom: 10px;
-        }
-        
-        .produit .prix {
-            color: #e74c3c;
-            font-size: 1.5em;
-            font-weight: bold;
-            margin: 15px 0;
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 30px;
-            background: #f8f9fa;
-            color: #7f8c8d;
-            border-top: 1px solid #eee;
-        }
-        
-        @media (max-width: 768px) {
-            .catalogue {
-                grid-template-columns: 1fr;
-                padding: 20px;
-            }
-            
-            .header {
-                padding: 30px 20px;
-            }
-            
-            .header h1 {
-                font-size: 2em;
-            }
-            
-            .social-icons {
-                position: static;
-                justify-content: center;
-                margin-bottom: 15px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <!-- Icônes réseaux sociaux avec vrais logos -->
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/1HxCMHr3bE/?mibextid=wwXIfr" target="_blank" title="Facebook">
-                    <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                </a>
-                <a href="https://www.instagram.com/andu_xara?igsh=cTFrcTFhMHQ3ZTlx&utm_source=qr" target="_blank" title="Instagram">
-                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                </a>
-                <a href="https://youtube.com/@andu-xaratv5737?si=FNjY4FhBKpCClpHw" target="_blank" title="YouTube">
-                    <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                </a>
-                <a href="https://www.tiktok.com/@andu_xara?_t=ZM-8zPDsFqJpRQ&_r=" target="_blank" title="TikTok">
-                    <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-                </a>
-                <a href="https://sites.google.com/view/andu-xara-marque-mauritanienne/accueil" target="_blank" title="Site Web">
-                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                </a>
-            </div>
-            
-            <h1>🛍️ ANDU-XARA</h1>
-            <p>Collection Exclusive - Catalogue Officiel</p>
-            
-            <!-- Texte de bienvenue défilant -->
-            <div class="welcome-banner">
-                <div class="scrolling-text">
-                    🏆 ANDU-XARA - EXCELLENCE DEPUIS 2022 • 🌟 CRÉATIONS HAUT DE GAMME • 💎 MATIÈRES PREMIUM • 
-                    🚀 EXPÉDITION SOUS 24H • 🌍 LIVRAISON MONDIALE : Mauritanie • Sénégal • France • Gambie • Mali • Côte d'Ivoire • Guinée •
-                    ⭐ GARANTIE SATISFACTION • 💫 STYLE UNIQUE • 🤝 CONSEIL PERSONNALISÉ • 
-                    🏆 ANDU-XARA - VOTRE RÉFÉRENCE MODE PREMIUM
-                </div>
-            </div>
-        </div>
-        
-        <div class="catalogue">
 
-            <div class="produit">
-                <img src="photos/Cauchon Blanc.jpeg" alt="Cauchon Blanc" class="produit-image">
-                <div class="produit-content">
-                    <h2>Cauchon Blanc</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">Cauchon Blanc Andu-xara</p>
-                    <div class="prix">549 MRU UM</div>
-                </div>
+        .add-to-cart:hover {
+            background-color: #2575fc;
+        }
+
+        .quick-view {
+            padding: 12px;
+            background-color: #f1f3f5;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .quick-view:hover {
+            background-color: #e9ecef;
+        }
+
+        /* ===== CHAT WHATSAPP ===== */
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 140px;
+            right: 20px;
+            width: 350px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+            z-index: 10000;
+            overflow: hidden;
+            transform: translateY(calc(100% - 50px));
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-chat.open {
+            transform: translateY(0);
+        }
+
+        .chat-header {
+            background: #25D366;
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chat-header span {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .chat-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .chat-messages {
+            height: 250px;
+            overflow-y: auto;
+            padding: 15px;
+            background: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .message {
+            padding: 10px 15px;
+            border-radius: 10px;
+            max-width: 80%;
+            word-wrap: break-word;
+            line-height: 1.4;
+        }
+
+        .message.bot {
+            background: white;
+            align-self: flex-start;
+            border: 1px solid #e0e0e0;
+        }
+
+        .message.user {
+            background: #dcf8c6;
+            align-self: flex-end;
+            margin-left: auto;
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid #e0e0e0;
+            background: white;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            outline: none;
+            margin-right: 10px;
+        }
+
+        .chat-input button {
+            background: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            z-index: 10000;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 30px;
+            height: 30px;
+            filter: brightness(0) invert(1);
+        }
+
+        /* ===== NEWSLETTER POPUP ===== */
+        .newsletter-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-popup.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .popup-content {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .popup-content h3 {
+            color: #6a11cb;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .popup-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .popup-content input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .popup-content button {
+            width: 100%;
+            padding: 12px;
+            background: #6a11cb;
+            color: white;
+               z-index: 10000;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 30px;
+            height: 30px;
+            filter: brightness(0) invert(1);
+        }
+
+        /* ===== NEWSLETTER POPUP ===== */
+        .newsletter-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-popup.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .popup-content {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .popup-content h3 {
+            color: #6a11cb;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .popup-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .popup-content input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .popup-content button {
+            width: 100%;
+            padding: 12px;
+            background: #6a11cb;
+            color: white;
+            border: none;
+         border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .popup-content button:hover {
+            background: #2575fc;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            margin-bottom: 8px;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .social-link:hover {
+            color: #6a11cb;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #4a5568;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 5px;
+        }
+
+        /* ===== NOTIFICATIONS ===== */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            z-index: 10000;
+            animation: slideIn 0.3s ease, fadeOut 0.3s ease 2.7s forwards;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            max-width: 350px;
+        }
+
+        .notification.error {
+            background: #ff4757;
+        }
+
+        .notification.warning {
+            background: #ffa502;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; visibility: hidden; }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .logo-img {
+                width: 70px;
+                height: 70px;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            .product-image-container {
+                height: 200px;
+            }
+
+            .category-banner {
+                height: 150px;
+            }
+
+            .banner-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .cart-icon, .wishlist-icon {
+                bottom: 15px;
+                left: 15px;
+                padding: 10px 14px;
+                font-size: 14px;
+            }
+
+            .wishlist-icon {
+                bottom: 70px;
+            }
+
+            .whatsapp-chat {
+                width: 320px;
+                right: 10px;
+                bottom: 130px;
+            }
+
+            .whatsapp-float {
+                bottom: 15px;
+                right: 15px;
+                width: 55px;
+                height: 55px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .category-banner {
+                height: 120px;
+            }
+
+            .banner-content h2 {
+                font-size: 1.2rem;
+            }
+
+            .banner-content p {
+                font-size: 0.9rem;
+            }
+
+            .whatsapp-chat {
+                width: 300px;
+                right: 5px;
+                bottom: 120px;
+            }
+
+            .chat-messages {
+                height: 200px;
+            }
+        }
+
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.marquee-container {
+    background: linear-gradient(90deg, #2c3e50, #34495e);
+    color: white;
+    padding: 12px 0;
+    overflow: hidden;
+    position: relative;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    width: 100%;
+    z-index: 1000;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.marquee-section {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.welcome {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 6px 20px;
+    border-radius: 18px;
+    font-size: 14px;
+    color: white;
+}
+
+.promotion {
+    background: linear-gradient(90deg, #ff0066, #ff6600);
+    padding: 6px 20px;
+    border-radius: 18px;
+    font-size: 14px;
+    color: white;
+}
+
+.original {
+    background: linear-gradient(90deg, #00b09b, #96c93d);
+    padding: 6px 20px;
+    border-radius: 18px;
+    font-size: 14px;
+    color: white;
+}
+
+<style>
+/* ===== TOAST ===== */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 10000;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+    </style>
+</head>      
+
+<style>
+.depliant-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#depliant-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+}
+
+.depliant-images, .depliant-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.depliant-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.depliant-images.hide {
+    opacity: 0;
+}
+
+.depliant-text {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.depliant-text.show {
+    opacity: 1;
+}
+
+.depliant-img {
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.depliant-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.depliant-text {
+    display: none;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+}
+
+.depliant-text.show {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajustement pour les images */
+.depliant-images.show {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.depliant-img {
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.depliant-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.depliant-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f7fa;
+}
+
+.depliant-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Slider */
+.slider {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.slides {
+    display: flex;
+    width: calc(3 * 100%);
+    animation: slide 9s infinite;
+}
+
+.depliant-img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+</style>
+
+
+<!-- Toast confirmation ajout au panier -->
+<div id="toast" class="toast">Produit ajouté au panier !</div>
+
+    <!-- Texte défilant -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <div class="marquee-section welcome">
+                🌟 BIENVENUE CHEZ ANDU-XARA - VOTRE CATALOGUE DE MODE EXCLUSIVE 2025 🌟
             </div>
-    
-            <div class="produit">
-                <img src="photos/Ensemble Capuchon gris.jpeg" alt="Ensemble Capuchon Gris" class="produit-image">
-                <div class="produit-content">
-                    <h2>Ensemble Capuchon Gris</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">Ensemble capuchon gris premium</p>
-                    <div class="prix">950 MRU UM</div>
-                </div>
+            <div class="marquee-section promotion">
+                🎉 OFFRE SPÉCIALE : À l'occasion de la journée internationale de la langue Soninké le 25 septembre décrétée par l'UNESCO, bénéficiez de remises exceptionnelles !
             </div>
-    
-            <div class="produit">
-                <img src="photos/Ensemble Capuchon noir fr.jpeg" alt="Ensemble Capuchon Noir FR" class="produit-image">
-                <div class="produit-content">
-                    <h2>Ensemble Capuchon Noir FR</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">Ensemble capuchon noir français</p>
-                    <div class="prix">950 MRU UM</div>
-                </div>
+            <div class="marquee-section original">
+                🌟 PROMOTION EXCEPTIONNELLE : 30% DE RÉDUCTION SUR TOUT LE CATALOGUE - OFFRE VALABLE JUSQU'AU 31 DÉCEMBRE 2025 🌟
             </div>
-    
-            <div class="produit">
-                <img src="photos/Ensemble pull blanc jogging noir et Capuchon.jpeg" alt="Pull Blanc Jogging Noir" class="produit-image">
-                <div class="produit-content">
-                    <h2>Pull Blanc Jogging Noir</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">Ensemble pull blanc + jogging noir</p>
-                    <div class="prix">749 MRU UM</div>
-                </div>
-            </div>
-    
-            <div class="produit">
-                <img src="photos/Pull Bleu .jpeg" alt="Pull Bleu" class="produit-image">
-                <div class="produit-content">
-                    <h2>Pull Bleu</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">Pull bleu Andu-xara</p>
-                    <div class="prix">549 MRU UM</div>
-                </div>
-            </div>
-    
-            <div class="produit">
-                <img src="photos/Pull et T-shirt combinés.jpeg" alt="Pull et T-shirt Combinés" class="produit-image">
-                <div class="produit-content">
-                    <h2>Pull et T-shirt Combinés</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">Ensemble pull + t-shirt combinés</p>
-                    <div class="prix">799 MRU UM</div>
-                </div>
-            </div>
-    
-            <div class="produit">
-                <img src="photos/Tshirt Blanc et Jogging noir.jpeg" alt="T-shirt Blanc Jogging" class="produit-image">
-                <div class="produit-content">
-                    <h2>T-shirt Blanc Jogging</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">T-shirt blanc + jogging noir</p>
-                    <div class="prix">699 MRU UM</div>
-                </div>
-            </div>
-    
-            <div class="produit">
-                <img src="photos/t-shirt noir arabe.jpeg" alt="T-shirt Noir Arabe" class="produit-image">
-                <div class="produit-content">
-                    <h2>T-shirt Noir Arabe</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">T-shirt noir style arabe</p>
-                    <div class="prix">499 MRU UM</div>
-                </div>
-            </div>
-    
-            <div class="produit">
-                <img src="photos/T-shirt noir logo arabe .jpeg" alt="T-shirt Noir Logo Arabe" class="produit-image">
-                <div class="produit-content">
-                    <h2>T-shirt Noir Logo Arabe</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">T-shirt noir logo arabe</p>
-                    <div class="prix">499 MRU UM</div>
-                </div>
-            </div>
-    
-            <div class="produit">
-                <img src="photos/T-shirt noir logo arabe.jpeg" alt="T-shirt Noir Logo" class="produit-image">
-                <div class="produit-content">
-                    <h2>T-shirt Noir Logo</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">T-shirt noir avec logo</p>
-                    <div class="prix">499 MRU UM</div>
-                </div>
-            </div>
-    
-            <div class="produit">
-                <img src="photos/t-shirt noir logo avec motif.jpeg" alt="T-shirt Noir Motif" class="produit-image">
-                <div class="produit-content">
-                    <h2>T-shirt Noir Motif</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">T-shirt noir avec motif</p>
-                    <div class="prix">559 MRU UM</div>
-                </div>
-            </div>
-    
-            <div class="produit">
-                <img src="photos/T-shrt Enfant.jpeg" alt="T-shirt Enfant" class="produit-image">
-                <div class="produit-content">
-                    <h2>T-shirt Enfant</h2>
-                    <p class="reference">Référence: ADX</p>
-                    <p class="description">T-shirt Andu-xara enfant</p>
-                    <div class="prix">359 MRU  UM</div>
-                </div>
-            </div>
-    
-        </div>
-        
-        <div class="footer">
-            <p>© 2025 Andu-xara - Tous droits réservés</p>
-            <p>📧 Email: <a href="mailto:anduxara2408@gmail.com">anduxara2408@gmail.com</a></p>
-            <p>📱 WhatsApp: <a href="https://wa.me/22249037697">+222 49037697</a></p>
-            <p>📞 Téléphone: <a href="tel:+22231037697">+222 31037697</a></p>
-            <p>📞 Sénégal: <a href="tel:+221762821163">+221 762821163</a></p>
-            <p>🌍 Nous livrons dans : 
-                <img src="https://flagcdn.com/w40/mr.png" alt="Mauritanie" title="Mauritanie" style="width:20px; margin:0 2px;">
-                <img src="https://flagcdn.com/w40/sn.png" alt="Sénégal" title="Sénégal" style="width:20px; margin:0 2px;">
-                <img src="https://flagcdn.com/w40/fr.png" alt="France" title="France" style="width:20px; margin:0 2px;">
-                <img src="https://flagcdn.com/w40/gm.png" alt="Gambie" title="Gambie" style="width:20px; margin:0 2px;">
-                <img src="https://flagcdn.com/w40/ml.png" alt="Mali" title="Mali" style="width:20px; margin:0 2px;">
-                <img src="https://flagcdn.com/w40/ci.png" alt="Côte d'Ivoire" title="Côte d'Ivoire" style="width:20px; margin:0 2px;">
-                <img src="https://flagcdn.com/w40/gn.png" alt="Guinée" title="Guinée" style="width:20px; margin:0 2px;">
-                <img src="https://flagcdn.com/w40/gw.png" alt="Guinée-Bissau" title="Guinée-Bissau" style="width:20px; margin:0 2px;">
-                <img src="https://flagcdn.com/w40/gq.png" alt="Guinée équatoriale" title="Guinée équatoriale" style="width:20px; margin:0 2px;">
-                etc.
-            </p>
-            <p>Collection de luxe et d'exception</p>
         </div>
     </div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo Andu-Xara - Marque mauritanienne de vêtements exclusifs" class="logo-img" loading="lazy">
+                </div>
+                <div class="header-text">
+                    <h1>Catalogue Andu-Xara 2025</h1>
+                    <p class="subtitle">Découvrez nos vêtements exclusifs pour l'année 2025</p>
+                </div>
+                <div class="cart-icon">
+                    🛒 <span id="cart-counter">0</span>
+                </div>
+                <div class="wishlist-icon">
+                    ❤️ <span id="wishlist-counter">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="🔍 Rechercher un produit..." id="search-input" aria-label="Rechercher un produit">
+        </div>
+
+        <div class="categories">
+            <button class="category-btn active" data-category="tous">Tous</button>
+            <button class="category-btn" data-category="t-shirts">T-shirts</button>
+            <button class="category-btn" data-category="ensembles">Ensembles</button>
+            <button class="category-btn" data-category="enfants">Enfants</button>
+            <button class="category-btn" data-category="accessoires">Accessoires</button>
+        </div>
+
+        <!-- Bannières catégories -->
+        <div class="category-banners">
+            <div class="category-banner" data-category="t-shirts">
+                <div class="banner-content">
+                    <h2>Collection T-shirts</h2>
+                    <p>Découvrez nos designs exclusifs 2025</p>
+                </div>
+            </div>
+            
+            <div class="category-banner" data-category="ensembles">
+                <div class="banner-content">
+                    <h2>Ensembles Complets</h2>
+                    <p>Style et élégance pour toute occasion</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-grid" id="products-container">
+            <!-- Produits (même contenu que précédemment) -->
+            <!-- Produit 1 -->
+            <div class="product-card" data-category="t-shirts">
+                <div class="product-image-container">
+                    <img src="images/t-shirt-logo-arabe.jpeg" alt="T-shirt Andu-Xara avec logo arabe design exclusif - Collection 2025" class="product-image" loading="lazy">
+                    <button class="wishlist-btn" onclick="toggleWishlist('t-shirt-logo-arabe')">❤️</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">T-shirt logo arabe</h3>
+                    <p class="product-description">T-shirt coton premium avec logo arabe design exclusif</p>
+                    
+                    <div class="product-variations">
+                        <div class="variation-selector">
+                            <span>Taille:</span>
+                            <button class="variation-btn" data-size="S">S</button>
+                            <button class="variation-btn" data-size="M">M</button>
+                            <button class="variation-btn" data-size="L">L</button>
+                            <button class="variation-btn" data-size="XL">XL</button>
+                        </div>
+                    </div>
+                    
+                    <p class="product-price">499 Mru</p>
+                    
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="addToCart('T-shirt logo arabe', 499)">Ajouter au panier</button>
+                        <button class="quick-view">👁️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card" data-category="ensembles">
+                <div class="product-image-container">
+                    <img src="images/ensemble-capuchon-arabe.jpeg" alt="Ensemble Andu-Xara capuche style arabe complet - Collection 2025" class="product-image" loading="lazy">
+                    <button class="wishlist-btn" onclick="toggleWishlist('ensemble-capuchon-arabe')">❤️</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Ensemble capuche style arabe</h3>
+                    <p class="product-description">Ensemble complet premium avec capuchon style arabe</p>
+                    
+                    <div class="product-variations">
+                        <div class="variation-selector">
+                            <span>Taille:</span>
+                            <button class="variation-btn" data-size="M">M</button>
+                            <button class="variation-btn" data-size="L">L</button>
+                            <button class="variation-btn" data-size="XL">XL</button>
+                        </div>
+                    </div>
+                    
+                    <p class="product-price">599 Mru</p>
+                    
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="addToCart('Ensemble capuche style arabe', 599)">Ajouter au panier</button>
+                        <button class="quick-view">👁️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="product-card" data-category="ensembles">
+                <div class="product-image-container">
+                    <img src="images/combinaison.jpeg" alt="Combinaison Andu-Xara T-shirt et Capuche Bleu - Collection 2025" class="product-image" loading="lazy">
+                    <button class="wishlist-btn" onclick="toggleWishlist('combinaison')">❤️</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Combinaison T-shirt et Capuche</h3>
+                    <p class="product-description">T-shirt coton et Capuche Bleu - Confort garanti</p>
+                    
+                    <div class="product-variations">
+                        <div class="variation-selector">
+                            <span>Taille:</span>
+                            <button class="variation-btn" data-size="S">S</button>
+                            <button class="variation-btn" data-size="M">M</button>
+                            <button class="variation-btn" data-size="L">L</button>
+                        </div>
+                    </div>
+                    
+                    <p class="product-price">599 Mru</p>
+                    
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="addToCart('Combinaison T-shirt et Capuche', 599)">Ajouter au panier</button>
+                        <button class="quick-view">👁️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="product-card" data-category="enfants">
+                <div class="product-image-container">
+                    <img src="images/t-shirt-enfant.jpeg" alt="T-shirt enfant Andu-Xara coton confortable - Collection 2025" class="product-image" loading="lazy">
+                    <button class="wishlist-btn" onclick="toggleWishlist('t-shirt-enfant')">❤️</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">T-shirt Enfant</h3>
+                    <p class="product-description">T-shirt coton confortable pour enfants - Qualité premium</p>
+                    
+                    <div class="product-variations">
+                        <div class="variation-selector">
+                            <span>Âge:</span>
+                            <button class="variation-btn" data-size="3-5ans">3-5 ans</button>
+                            <button class="variation-btn" data-size="6-8ans">6-8 ans</button>
+                            <button class="variation-btn" data-size="9-12ans">9-12 ans</button>
+                        </div>
+                    </div>
+                    
+                    <p class="product-price">399 Mru</p>
+                    
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="addToCart('T-shirt Enfant', 399)">Ajouter au panier</button>
+                        <button class="quick-view">👁️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 5 -->
+            <div class="product-card" data-category="ensembles">
+                <div class="product-image-container">
+                    <img src="images/t-shirt-et-jogging.jpeg" alt="Ensemble Andu-Xara T-shirt et jogging - Collection 2025" class="product-image" loading="lazy">
+                    <button class="wishlist-btn" onclick="toggleWishlist('t-shirt-et-jogging')">❤️</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Ensemble T-shirt et jogging</h3>
+                    <p class="product-description">Ensemble coton premium - Style décontracté</p>
+                    
+                    <div class="product-variations">
+                        <div class="variation-selector">
+                            <span>Taille:</span>
+                            <button class="variation-btn" data-size="S">S</button>
+                            <button class="variation-btn" data-size="M">M</button>
+                            <button class="variation-btn" data-size="L">L</button>
+                            <button class="variation-btn" data-size="XL">XL</button>
+                        </div>
+                    </div>
+                    
+                    <p class="product-price">799 Mru</p>
+                    
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="addToCart('Ensemble T-shirt et jogging', 799)">Ajouter au panier</button>
+                        <button class="quick-view">👁️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 6 -->
+            <div class="product-card" data-category="t-shirts">
+                <div class="product-image-container">
+                    <img src="images/pull-bleu.jpeg" alt="Pull Andu-Xara bleu chaud et confortable - Collection 2025" class="product-image" loading="lazy">
+                    <button class="wishlist-btn" onclick="toggleWishlist('pull-bleu')">❤️</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Pull bleu</h3>
+                    <p class="product-description">Pull chaud et confortable de couleur bleue - Hiver 2025</p>
+                    
+                    <div class="product-variations">
+                        <div class="variation-selector">
+                            <span>Taille:</span>
+                            <button class="variation-btn" data-size="M">M</button>
+                            <button class="variation-btn" data-size="L">L</button>
+                            <button class="variation-btn" data-size="XL">XL</button>
+                        </div>
+                    </div>
+                    
+                    <p class="product-price">699 Mru</p>
+                    
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="addToCart('Pull bleu', 699)">Ajouter au panier</button>
+                        <button class="quick-view">👁️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 7 -->
+            <div class="product-card" data-category="accessoires">
+                <div class="product-image-container">
+                    <img src="images/capuchon-blanc.jpeg" alt="Capuchon Andu-Xara blanc style urbain - Collection 2025" class="product-image" loading="lazy">
+                    <button class="wishlist-btn" onclick="toggleWishlist('capuchon-blanc')">❤️</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Capuchon blanc</h3>
+                    <p class="product-description">Capuchon style urbain en couleur blanche - Adjustable</p>
+                    
+                    <div class="product-variations">
+                        <div class="variation-selector">
+                            <span>Taille:</span>
+                            <button class="variation-btn" data-size="Unique">Unique</button>
+                        </div>
+                    </div>
+                    
+                    <p class="product-price">299 Mru</p>
+                    
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="addToCart('Capuchon blanc', 299)">Ajouter au panier</button>
+                        <button class="quick-view">👁️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 8 -->
+            <div class="product-card" data-category="ensembles">
+                <div class="product-image-container">
+                    <img src="images/t-shirt-et-jogging.jpeg" alt="Ensemble complet Andu-Xara T-shirt et jogging assorti - Collection 2025" class="product-image" loading="lazy">
+                    <button class="wishlist-btn" onclick="toggleWishlist('ensemble-complet')">❤️</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">T-shirt et jogging</h3>
+                    <p class="product-description">Ensemble complet T-shirt et jogging assorti - Édition limitée</p>
+                    
+                    <div class="product-variations">
+                        <div class="variation-selector">
+                            <span>Taille:</span>
+                            <button class="variation-btn" data-size="S">S</button>
+                            <button class="variation-btn" data-size="M">M</button>
+                            <button class="variation-btn" data-size="L">L</button>
+                        </div>
+                    </div>
+                    
+                    <p class="product-price">899 Mru</p>
+                    
+                    <div class="product-actions">
+                        <button class="add-to-cart" onclick="addToCart('T-shirt et jogging Complet', 899)">Ajouter au panier</button>
+                        <button class="quick-view">👁️</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        </div>
+    </div>
+
+    <!-- Chat WhatsApp -->
+    <div class="whatsapp-chat" id="whatsappChat">
+        <div class="chat-header" onclick="toggleChat()">
+            <span>💬 Assistant Andu-Xara</span>
+            <button class="chat-toggle">▼</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                👋 Bonjour ! Je suis l'assistant virtuel Andu-Xara. 
+            </div>
+            <div class="message bot">
+                🤖 Je peux vous aider pour :
+                • Informations produits 📦
+                • Commandes et tailles 📏
+                • Livraisons 🚚
+                • Promotions en cours 🎉
+            </div>
+            <div class="message bot">
+                💡 Tapez votre question ou cliquez sur le logo WhatsApp pour discuter directement avec notre équipe !
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Tapez votre message..." id="chatInput" onkeypress="handleChatInput(event)">
+            <button onclick="sendChatMessage()">➤</button>
+        </div>
+    </div>
+
+    <!-- Bouton flottant WhatsApp -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3LjQ3MiAxNC4zODRDMTcuMDEgMTMuOTc4IDE2LjY2NSAxMy44NzIgMTYuMDMgMTQuMzg0QzE1LjQ5NSAxNC44MTIgMTQuNDkgMTUuNzggMTQuMzIzIDE1Ljk0OEMxNC4xNzkgMTYuMDg5IDEzLjk5NSAxNi4xMDIgMTMuNzc0IDE1Ljk0OEMxMy41NTQgMTUuNzk0IDEyLjY0NyAxNS4yMjYgMTEuNjQyIDE0LjMyM0MxMC43OTEgMTMuNTQ3IDEwLjIxNiAxMi42NTIgMTAuMDYgMTMuNDEzQzE5LjkwNCAxMi4yNTggOS45MDQgMTIuMjU4IDEwLjA2IDExLjQxM0MxMC4xMDIgMTEuMTc5IDEwLjI2OSAxMC45ODQgMTAuNDk2IDEwLjg3OUMxMC43NzYgMTAuNzM2IDExLjMxMiAxMC41MDIgMTEuMzEyIDEwLjUwMkMxMS40NTYgMTAuNDIxIDExLjYxMiAxMC4yNDQgMTEuNjUyIDEwLjA1OUMxMS42OTIgOS44NzM1IDExLjYxNCA5LjY4ODUgMTEuNDc3IDkuNTU0MUMxMS4yMjggOS4yOTk1IDEwLjg2MiA4Ljg4ODUgMTAuNjg3IDguNjg0NUMxMC40NDIgOC40MDM1IDEwLjE5NiA4LjM5NzUgOS45NjcgOC41MjM1QzkuNzM4IDguNjQ5NSA5LjA0MSA4Ljk5MTUgOC44NzkgOS4wODA1QzguNTYyIDkuMjQxNSA4LjMyMiA5LjI4MzUgOC4xMjYgOS4wODA1QzcuOTMgOC44Nzc1IDcuNDUyIDguMzYzNSA3LjIyOSA4LjEyMDVDNi44ODIgNy43NDc1IDYuNTM1IDcuNzQ3NSA2LjI4NCA3Ljc0NzVDNi4wNzMgNy43NDc1IDUuODYyIDcuNzc5NSA1LjY3NiA3Ljk5MDVDNS4xMjMgOC41MjM1IDQuODc3IDkuMTc4NSA0Ljg3NyA5Ljg0NzVDNC44NzcgMTAuNTE2IDUuMTIzIDExLjE3MSA1LjM3MiAxMS42ODVDNS42MiAxMi4xOTkgNi45MjYgMTQuNDQzIDkuMDYyIDE1Ljk0OUMxMC44MjYgMTcuMjE2IDEyLjI0NSAxNy42NjcgMTMuNDA0IDE3Ljg2OUMxMy44NzIgMTcuOTUyIDE0LjMwNCAxNy45MDQgMTQuNjg0IDE3Ljc0M0MxNS4yMjYgMTcuNTExIDE2LjE2NSAxNi45MjYgMTYuNDE0IDE2LjI1N0MxNi41MjggMTUuOTU2IDE2LjQ1NSAxNS43MDQgMTYuMzI5IDE1LjUwMUMxNi4yMDMgMTUuMjk4IDE2LjAzNyAxNS4wNDYgMTUuODcxIDE0Ljg5MkMxNS43MDUgMTQuNzM4IDE1LjU1MyAxNC42NTIgMTUuNDI3IDE0Ljc5NEMxNS4zMDEgMTQuOTM2IDE1LjQyNyAxNS4xODggMTUuNTUzIDE1LjM1MkMxNS42OCAxNS41MTYgMTUuODU4IDE1Ljc1OCAxNS45ODQgMTUuOTAyQzE2LjI1OCAxNi4yMDIgMTYuNDU1IDE2LjI1NyAxNi43MDQgMTYuMTQzQzE2Ljk1MyAxNi4wMjkgMTcuNzQyIDE1LjUyNSAxOC4xOTQgMTUuMDQ2QzE4LjcyMiAxNC40ODcgMTguOTQ1IDEzLjk5IDE4Ljg4NiAxMy41ODRDMTguODI3IDEzLjE3OCAxOC40NzMgMTMuMDQ0IDE4LjA3NSAxMi45MUwxNy40NzIgMTQuMzg0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+" alt="WhatsApp">
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Andu-Xara</h3>
+                    <p>Votre marque mauritanienne de vêtements exclusifs depuis 2023</p>
+                    <p>Qualité · Style · Tradition Moderne</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📧 Email: anduxara2408@gmail.com</p>
+                    <p>📞 Téléphone: +222 49 03 76 97</p>
+                    <p>💬 WhatsApp: +222 49 03 76 97</p>
+                    <p>📍 Mauritanie, Nouakchott</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/andu_xara?igsh=cTFrcTFhMHQ3ZTlx&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-link">
+      <button class="chat-toggle">▼</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                👋 Bonjour ! Je suis l'assistant virtuel Andu-Xara.
+            </div>
+            <div class="message bot">
+                🤖 Je peux vous aider pour :
+                • Informations produits 📦
+                • Commandes et tailles 📏
+                • Livraisons 🚚
+                • Promotions en cours 🎉
+            </div>
+            <div class="message bot">
+                💡 Tapez votre question ou cliquez sur le logo WhatsApp pour discuter directement avec notre équipe !
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Tapez votre message..." id="chatInput" onkeypress="handleChatInput(event)">
+            <button onclick="sendChatMessage()">➤</button>
+        </div>
+    </div>
+
+    <!-- Bouton flottant WhatsApp -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+                          <span>📷</span> Instagram
+                        </a>
+                        <a href="https://www.tiktok.com/@andu_xara?_t=ZM-8zPDsFqJpRQ&_r=" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span>🎵</span> TikTok
+                        </a>
+                        <a href="https://www.facebook.com/share/1HxCMHr3bE/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span>📘</span> Facebook
+                        </a>
+                        <a href="https://youtube.com/@andu-xaratv5737?si=FNjY4FhBKpCClpHw" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span>📺</span> YouTube
+                        </a>
+                        <a href="https://sites.google.com/view/andu-xara-marque-mauritanienne/accueil" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span>🌐</span> Site Web
+                        </a>
+                        <a href="https://wa.me/22249037697" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span>💬</span> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Andu-Xara - Tous droits réservés</p>
+                <p>Contact: anduxara2408@gmail.com | Tel: +222 49 03 76 97 / +221 76 282 11 33</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+// ===== FONCTIONNALITÉS PRINCIPALES =====
+document.addEventListener('DOMContentLoaded', function() {
+    updateCartCounter();
+    updateWishlistCounter();
+    showNewsletterPopup();
+    initVariationButtons();
+    initChat();
+    initCartFunctionality(); // AJOUT IMPORTANT
+});
+
+// ===== WISHLIST =====
+let wishlistItems = JSON.parse(localStorage.getItem('wishlistItems')) || [];
+
+function toggleWishlist(productId) {
+    const index = wishlistItems.indexOf(productId);
+    const button = event.currentTarget;
+    
+    if (index > -1) {
+        wishlistItems.splice(index, 1);
+        button.classList.remove('active');
+        showNotification('Retiré des favoris', 'warning');
+    } else {
+        wishlistItems.push(productId);
+        button.classList.add('active');
+        showNotification('Ajouté aux favoris ❤️');
+    }
+    
+    localStorage.setItem('wishlistItems', JSON.stringify(wishlistItems));
+    updateWishlistCounter();
+}
+
+function updateWishlistCounter() {
+    document.getElementById('wishlist-counter').textContent = wishlistItems.length;
+}
+
+// ===== PANIER =====
+let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+function addToCart(productName, productPrice) {
+    if (navigator.vibrate) {
+        navigator.vibrate(50);
+    }
+    
+    const price = parseFloat(productPrice);
+    const existingItem = cartItems.find(item => item.name === productName);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cartItems.push({
+            id: Date.now(),
+            name: productName,
+            price: price,
+            quantity: 1,
+            size: getSelectedSize()
+        });
+    }
+
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    updateCartCounter();
+    showNotification(productName + ' ajouté au panier 🛒'); // CORRECTION ICI
+}
+
+function updateCartCounter() {
+    const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+    document.getElementById('cart-counter').textContent = totalItems;
+}
+
+// ===== INITIALISATION DU PANIER =====
+function initCartFunctionality() {
+    const cartIcon = document.querySelector('.cart-icon');
+    if (cartIcon) {
+        cartIcon.addEventListener('click', showCartModal);
+    }
+}
+
+// ===== MODAL DU PANIER =====
+function showCartModal() {
+    console.log('Ouverture du panier');
+    
+    // Créer le modal s'il n'existe pas
+    let cartModal = document.getElementById('cart-modal');
+    
+    if (!cartModal) {
+        cartModal = document.createElement('div');
+        cartModal.id = 'cart-modal';
+        cartModal.style.cssText = `
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+            z-index: 10001;
+            width: 90%;
+            max-width: 500px;
+            max-height: 80vh;
+            overflow-y: auto;
+        `;
+        
+        // Overlay
+        const overlay = document.createElement('div');
+        overlay.id = 'cart-overlay';
+        overlay.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 10000;
+        `;
+        overlay.onclick = closeCartModal;
+        
+        document.body.appendChild(overlay);
+        document.body.appendChild(cartModal);
+    }
+    
+    // Mettre à jour le contenu du panier
+    updateCartModalContent();
+    cartModal.style.display = 'block';
+    document.getElementById('cart-overlay').style.display = 'block';
+}
+
+function closeCartModal() {
+    const cartModal = document.getElementById('cart-modal');
+    const overlay = document.getElementById('cart-overlay');
+    
+    if (cartModal) cartModal.style.display = 'none';
+    if (overlay) overlay.style.display = 'none';
+}
+
+function updateCartModalContent() {
+    const cartModal = document.getElementById('cart-modal');
+    if (!cartModal) return;
+    
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    
+    if (cartItems.length === 0) {
+        cartModal.innerHTML = `
+            <div style="text-align: center; padding: 20px;">
+                <h3>🛒 Votre panier est vide</h3>
+                <p>Ajoutez des produits pour les voir ici</p>
+                <button onclick="closeCartModal()" style="
+                    padding: 10px 20px;
+                    background: #6a11cb;
+                    color: white;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    margin-top: 15px;
+                ">Continuer vos achats</button>
+            </div>
+        `;
+        return;
+    }
+    
+    let total = 0;
+    let html = `
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3>🛒 Votre Panier</h3>
+            <button onclick="closeCartModal()" style="
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: #999;
+            ">×</button>
+        </div>
+    `;
+    
+    cartItems.forEach((item, index) => {
+        const itemTotal = item.price * item.quantity;
+        total += itemTotal;
+        
+        html += `
+            <div style="
+                border: 1px solid #eee;
+                border-radius: 10px;
+                padding: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            ">
+                <div style="flex: 1;">
+                    <h4 style="margin: 0 0 5px 0; color: #333;">${item.name}</h4>
+                    <p style="margin: 0; color: #666; font-size: 0.9rem;">
+                        Taille: ${item.size || 'M'} | 
+                        Prix: ${item.price} Mru × ${item.quantity}
+                    </p>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-weight: bold; color: #6a11cb;">${itemTotal} Mru</span>
+                    <button onclick="removeFromCart(${index})" style="
+                        background: #ff4757;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 5px 10px;
+                        cursor: pointer;
+                    ">×</button>
+                </div>
+            </div>
+        `;
+    });
+    
+    html += `
+        <div style="border-top: 2px solid #6a11cb; padding-top: 15px; margin-top: 20px;">
+            <div style="display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: bold;">
+                <span>Total:</span>
+                <span>${total} Mru</span>
+            </div>
+            <button onclick="checkout()" style="
+                width: 100%;
+                padding: 15px;
+                background: #25D366;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 15px;
+            ">
+                🛍️ Commander via WhatsApp
+            </button>
+            <button onclick="closeCartModal()" style="
+                width: 100%;
+                padding: 10px;
+                background: #f1f3f5;
+                color: #666;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                margin-top: 10px;
+            ">
+                Continuer mes achats
+            </button>
+        </div>
+    `;
+    
+    cartModal.innerHTML = html;
+}
+
+function removeFromCart(index) {
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    cartItems.splice(index, 1);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    updateCartCounter();
+    updateCartModalContent();
+    showNotification('Produit retiré du panier', 'warning');
+}
+
+function checkout() {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    if (cartItems.length === 0) {
+        showNotification('Votre panier est vide', 'error');
+        return;
+    }
+    
+    let message = "Bonjour ! Je souhaite commander les produits suivants :%0A%0A";
+    let total = 0;
+    
+    cartItems.forEach(item => {
+        const itemTotal = item.price * item.quantity;
+        total += itemTotal;
+        message += `• ${item.name} (Taille: ${item.size || 'M'}) - ${item.quantity} × ${item.price} Mru = ${itemTotal} Mru%0A`;
+    });
+    
+    message += `%0ATotal : ${total} Mru%0A%0A`;
+    message += "Merci de me confirmer la disponibilité et les délais de livraison.";
+    
+    const phoneNumber = "22249037697";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    
+    window.open(whatsappUrl, '_blank');
+    closeCartModal();
+}
+
+// ===== VARIATIONS PRODUITS =====
+function initVariationButtons() {
+    document.querySelectorAll('.variation-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const parent = this.closest('.variation-selector');
+            parent.querySelectorAll('.variation-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+}
+
+function getSelectedSize() {
+    const activeSize = document.querySelector('.variation-btn.active[data-size]');
+    return activeSize ? activeSize.dataset.size : 'M';
+}
+
+// ===== NEWSLETTER POPUP =====
+function showNewsletterPopup() {
+    const alreadyShown = localStorage.getItem('newsletterShown');
+    if (!alreadyShown) {
+        setTimeout(() => {
+            document.getElementById('newsletterPopup').classList.add('active');
+            localStorage.setItem('newsletterShown', 'true');
+        }, 3000);
+    }
+}
+
+function closeNewsletter() {
+    document.getElementById('newsletterPopup').classList.remove('active');
+}
+
+function subscribeNewsletter() {
+    const email = document.getElementById('newsletterEmail').value;
+    if (email && email.includes('@')) {
+        let subscribers = JSON.parse(localStorage.getItem('newsletterSubscribers')) || [];
+        subscribers.push(email);
+        localStorage.setItem('newsletterSubscribers', JSON.stringify(subscribers));
+        showNotification('Merci pour votre inscription ! ✅');
+        closeNewsletter();
+    } else {
+        showNotification('Veuillez entrer un email valide', 'error');
+    }
+}
+
+// ===== CHAT WHATSAPP INTELLIGENT =====
+function initChat() {
+    document.querySelector('.chat-header').addEventListener('click', function(e) {
+        if (e.target.classList.contains('chat-toggle')) {
+            toggleChat();
+        }
+    });
+}
+
+function toggleChat() {
+    const chat = document.getElementById('whatsappChat');
+    chat.classList.toggle('open');
+    const toggleBtn = chat.querySelector('.chat-toggle');
+    toggleBtn.textContent = chat.classList.contains('open') ? '▼' : '▲';
+}
+
+function handleChatInput(event) {
+    if (event.key === 'Enter') {
+        sendChatMessage();
+    }
+}
+
+function sendChatMessage() {
+    const input = document.getElementById('chatInput');
+    const message = input.value.trim();
+    
+    if (message) {
+        addChatMessage(message, 'user');
+        input.value = '';
+        
+        setTimeout(() => {
+            const response = generateIntelligentResponse(message);
+            addChatMessage(response, 'bot');
+        }, 1000);
+    }
+}
+
+function generateIntelligentResponse(userMessage) {
+    const lowerMessage = userMessage.toLowerCase();
+    
+    if (lowerMessage.includes('bonjour') || lowerMessage.includes('salut') || lowerMessage.includes('hello')) {
+        return "👋 Bonjour ! Je suis ravi de vous aider. De quoi avez-vous besoin aujourd'hui ?";
+    }
+    
+    if (lowerMessage.includes('merci') || lowerMessage.includes('remercie')) {
+        return "😊 Je vous en prie ! N'hésitez pas si vous avez d'autres questions.";
+    }
+    
+    if (lowerMessage.includes('commande') || lowerMessage.includes('acheter') || lowerMessage.includes('achat')) {
+        return "🛒 Excellent choix ! Pour passer commande, vous pouvez :\n• Ajouter les articles au panier\n• Nous contacter directement sur WhatsApp\n• Profiter de nos promotions en cours 🎉";
+    }
+    
+    if (lowerMessage.includes('livraison') || lowerMessage.includes('livrer') || lowerMessage.includes('délai')) {
+        return "🚚 Nous livrons partout en Mauritanie !\nDélais :\n• Nouakchott : 24-48h\n• Autres villes : 3-5 jours\n• Livraison gratuite à partir de 5000 Mru";
+    }
+    
+    if (lowerMessage.includes('taille') || lowerMessage.includes('tailles') || lowerMessage.includes('size')) {
+        return "📏 Nos tailles :\n• S (Small)\n• M (Medium)\n• L (Large)\n• XL (Extra Large)\nBesoin d'aide pour choisir ? Dites-moi votre morphologie !";
+    }
+    
+    if (lowerMessage.includes('prix') || lowerMessage.includes('coût') || lowerMessage.includes('combien')) {
+        return "💰 Nos prix sont très compétitifs !\n• T-shirts : à partir de 499 Mru\n• Ensembles : à partir de 599 Mru\n• Enfants : à partir de 399 Mru\nPromotions en cours : -30% 🎉";
+    }
+    
+    if (lowerMessage.includes('couleur') || lowerMessage.includes('couleurs') || lowerMessage.includes('color')) {
+        return "🎨 Nous avons une large gamme de couleurs :\n• Noir, Blanc, Bleu, Rouge\n• Vert, Jaune, Orange\n• Et bien d'autres !\nQuelle couleur vous intéresse ?";
+    }
+    
+    if (lowerMessage.includes('promo') || lowerMessage.includes('réduction') || lowerMessage.includes('solde')) {
+        return "🎉 PROMOTION EXCEPTIONNELLE !\n30% de réduction sur tout le catalogue\nValable jusqu'au 31 Décembre 2025\nProfitez-en vite ! 🚀";
+    }
+    
+    if (lowerMessage.includes('contact') || lowerMessage.includes('appeler') || lowerMessage.includes('whatsapp')) {
+        return "📞 Contactez-nous :\n• Tel: +222 49 03 76 97\n• WhatsApp: +222 49 03 76 97\n• Email: anduxara2408@gmail.com\nNous sommes disponibles 7j/7 !";
+    }
+    
+    if (lowerMessage.includes('qualité') || lowerMessage.includes('matière') || lowerMessage.includes('coton')) {
+        return "⭐ Nos produits sont de qualité premium :\n• 100% coton égyptien\n• Coutures renforcées\n• Teintures résistantes\n• Lavage en machine possible";
+    }
+    
+    const defaultResponses = [
+        "🤔 Je comprends votre demande. Pouvez-vous me donner plus de détails pour que je puisse mieux vous aider ?",
+        "💡 Je serais ravi de vous aider ! De quoi avez-vous besoin précisément ?",
+        "👕 Concernant nos produits Andu-Xara, je peux vous renseigner sur :\n• Les tailles disponibles\n• Les matériaux utilisés\n• Les délais de livraison\n• Les promotions en cours\nQue vous intéresse-t-il ?",
+        "🚀 Excellent ! Pour une assistance personnalisée, je vous recommande de contacter directement notre équipe sur WhatsApp. Ils pourront vous aider en temps réel !",
+        "😊 Merci pour votre message ! Notre équipe est là pour vous aider. Souhaitez-vous des informations sur un produit particulier ?"
+    ];
+    
+    return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+}
+
+function addChatMessage(text, type) {
+    const messagesContainer = document.getElementById('chatMessages');
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'message ' + type;
+    
+    const formattedText = text.replace(/\n/g, '<br>');
+    messageDiv.innerHTML = formattedText;
+    
+    messagesContainer.appendChild(messageDiv);
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+}
+
+function openWhatsApp() {
+    const phoneNumber = "22249037697";
+    const message = "Bonjour, je suis intéressé par vos produits Andu-Xara. Pouvez-vous m'aider ?";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+// ===== RECHERCHE =====
+document.getElementById('search-input').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const products = document.querySelectorAll('.product-card');
+
+    products.forEach(product => {
+        const title = product.querySelector('.product-title').textContent.toLowerCase();
+        const description = product.querySelector('.product-description').textContent.toLowerCase();
+
+        if (title.includes(searchTerm) || description.includes(searchTerm)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+});
+
+// ===== CATÉGORIES =====
+document.querySelectorAll('.category-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        this.classList.add('active');
+        const category = this.getAttribute('data-category');
+        const products = document.querySelectorAll('.product-card');
+        
+        products.forEach(product => {
+            if (category === 'tous') {
+                product.style.display = 'block';
+            } else {
+                const productCategory = product.getAttribute('data-category');
+                product.style.display = (productCategory === category) ? 'block' : 'none';
+            }
+        });
+    });
+});
+
+// ===== BANNIÈRES CATÉGORIES =====
+document.querySelectorAll('.category-banner').forEach(banner => {
+    banner.addEventListener('click', function() {
+        const category = this.getAttribute('data-category');
+        document.querySelector(`.category-btn[data-category="${category}"]`).click();
+        window.scrollTo({ top: document.querySelector('.products-grid').offsetTop - 100, behavior: 'smooth' });
+    });
+});
+
+// ===== NOTIFICATIONS =====
+function showNotification(message, type = 'success') {
+    const notification = document.createElement('div');
+    notification.className = 'notification ' + type;
+    notification.innerHTML = `
+        <span class="notification-icon">${type === 'success' ? '✅' : '⚠️'}</span>
+        <span>${message}</span>
+    `;
+    document.body.appendChild(notification);
+
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+}
+
+// ===== SERVICE WORKER PWA =====
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(console.error);
+    });
+}
+// ===== BANDEAU DÉFILANT =====
+document.addEventListener("DOMContentLoaded", function() {
+    const marquee = document.querySelector(".marquee-content");
+    if (!marquee) return; // Si aucun bandeau, ne rien faire
+
+    let scrollAmount = 0;
+
+    function scrollMarquee() {
+        scrollAmount++;
+        if(scrollAmount >= marquee.scrollWidth / 2) {
+            scrollAmount = 0;
+        }
+        marquee.style.transform = `translateX(-${scrollAmount}px)`;
+        requestAnimationFrame(scrollMarquee);
+    }
+
+    scrollMarquee();
+});
+
+// ===== TOAST CONFIRMATION AJOUT AU PANIER =====
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.classList.add('show');
+
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 3000); // le toast disparaît après 3 secondes
+}
+
+// Exemple : détecter tous les boutons "Ajouter au panier"
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const productName = button.dataset.productName; // si tu as un data-product-name
+        const productPrice = button.dataset.productPrice; // ou prix
+        addToCart(productName, productPrice); // ajoute au panier
+        showToast('Produit ajouté au panier !');
+    });
+});
+
+const depliantImages = document.querySelector('.depliant-images');
+
+function switchDepliant() {
+    // Affiche texte et cache images
+    depliantImages.classList.remove('show');
+    depliantText.classList.add('show');
+
+    // Après 5 secondes, retour aux images
+    setTimeout(() => {
+        depliantText.classList.remove('show');
+        depliantImages.classList.add('show');
+    }, 5000);
+}
+
+// Déclencher toutes les 10 secondes
+setInterval(switchDepliant, 10000);
+
+const depliantImages = document.querySelector('.depliant-images');
+const depliantText = document.querySelector('.depliant-text');
+
+function switchDepliant() {
+    // Images disparaissent
+    depliantImages.classList.add('hide');
+    
+    // Texte apparaît
+    depliantText.classList.add('show');
+
+    // Après 10 secondes, retour aux images
+    setTimeout(() => {
+        depliantText.classList.remove('show');
+        depliantImages.classList.remove('hide');
+    }, 5000);
+}
+
+// Déclenche toutes les 10 secondes
+setInterval(switchDepliant, 10000);
+
+</script> <!-- Fin de ton JavaScript principal -->
+
+<!-- Popup Newsletter -->
+<div id="newsletter-popup" class="newsletter-popup">
+    <div class="newsletter-content">
+        <button class="close-popup" onclick="closeNewsletter()">×</button>
+        <h2>Abonnez-vous à notre Newsletter</h2>
+        <p>Recevez nos nouveautés et promotions directement dans votre boîte mail !</p>
+        <input type="email" id="newsletter-email" placeholder="Votre e-mail">
+        <button onclick="subscribeNewsletter()">S'inscrire</button>
+    </div>
+ </div>
+</script>
 </body>
 </html>

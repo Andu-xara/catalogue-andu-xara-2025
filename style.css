@@ -1,0 +1,79 @@
+/* Styles pour la page panier */
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.cart-total {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.cart-actions {
+    margin-top: 30px;
+}
+
+.checkout-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+/* Style pour le bouton WhatsApp */
+button.whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+button.whatsapp-btn:hover {
+    background-color: #128C7E;
+    cursor: pointer;
+}
+/* ===== NOTIFICATIONS MODERNES ===== */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 10000;
+    animation: slideIn 0.3s ease, fadeOut 0.3s ease 2.7s forwards;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notification.error {
+    background: #ff4757;
+}
+
+.notification.warning {
+    background: #ffa502;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; visibility: hidden; }
+}
+
+.notification-icon {
+    font-size: 1.2rem;
+}

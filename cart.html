@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - Andu-Xara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Votre Panier</h1>
+        <a href="index.html">← Retour au catalogue</a>
+    </header>
+
+    <main>
+        <div id="cart-items">
+            <!-- Le contenu du panier sera affiché ici par JavaScript -->
+        </div>
+
+        <div class="cart-total">
+           <h3>Total: <span id="cart-total">0</span></h3>
+        </div>
+
+        <div class="cart-actions">
+            <button onclick="placeOrder()" class="checkout-btn">Passer la commande</button>
+            <button onclick="placeOrderViaWhatsApp()" class="checkout-btn whatsapp-btn">Commander via WhatsApp</button>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
+</body>
+</html>

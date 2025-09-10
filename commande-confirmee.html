@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande Confirmée - Andu-Xara</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .confirmation-container {
+            background: white;
+            color: #333;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        .checkmark {
+            font-size: 4rem;
+            color: #25D366;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            color: #7f8c8d;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+            transition: background 0.3s ease;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+        }
+        
+        .home-btn {
+            background: #6a11cb;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+            transition: background 0.3s ease;
+        }
+        
+        .home-btn:hover {
+            background: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <div class="checkmark">✅</div>
+        <h1>Commande Confirmée !</h1>
+        <p>Merci pour votre confiance. Votre commande a été enregistrée avec succès.</p>
+        <p>Nous vous contacterons dans les plus brefs délais sur WhatsApp pour finaliser votre commande.</p>
+        
+        <div class="action-buttons">
+            <a href="https://wa.me/22249037697" class="whatsapp-btn" target="_blank">
+                📱 Nous contacter sur WhatsApp
+            </a>
+            <br>
+            <a href="index.html" class="home-btn">
+                🏠 Retour à l'accueil
+            </a>
+        </div>
+    </div>
+</body>
+</html>

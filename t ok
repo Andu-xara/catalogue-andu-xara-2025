@@ -1,0 +1,349 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 582e6a8..fe995d8 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -127,6 +127,21 @@[m
+             padding: 40px;[m
+         }[m
+         [m
+[32m+[m[32m    .bouton-commander {[m
+[32m+[m[32m        display: inline-block;[m
+[32m+[m[32m        background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);[m
+[32m+[m[32m        color: white;[m
+[32m+[m[32m        padding: 12px 20px;[m
+[32m+[m[32m        border-radius: 8px;[m
+[32m+[m[32m        text-decoration: none;[m
+[32m+[m[32m        font-weight: bold;[m
+[32m+[m[32m        margin-top: 10px;[m
+[32m+[m[32m        transition: all 0.3s ease;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .bouton-commander:hover {[m
+[32m+[m[32m        transform: translateY(-2px);[m
+[32m+[m[32m        box-shadow: 0 5px 15px rgba(18, 140, 126, 0.4);[m
+[32m+[m[32m    }[m
+         .produit {[m
+             background: white;[m
+             border-radius: 15px;[m
+[36m@@ -229,7 +244,7 @@[m
+                 <a href="https://sites.google.com/view/andu-xara-marque-mauritanienne/accueil" target="_blank" title="Site Web">[m
+                     <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>[m
+                 </a>[m
+[31m-            </div>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+             [m
+             <h1>🛍️ ANDU-XARA</h1>[m
+             <p>Collection Exclusive - Catalogue Officiel</p>[m
+[36m@@ -241,131 +256,131 @@[m
+                     🚀 EXPÉDITION SOUS 24H • 🌍 LIVRAISON MONDIALE : Mauritanie • Sénégal • France • Gambie • Mali • Côte d'Ivoire • Guinée •[m
+                     ⭐ GARANTIE SATISFACTION • 💫 STYLE UNIQUE • 🤝 CONSEIL PERSONNALISÉ • [m
+                     🏆 ANDU-XARA - VOTRE RÉFÉRENCE MODE PREMIUM[m
+[31m-                </div>[m
+[31m-            </div>[m
+[31m-        </div>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m        </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+         [m
+         <div class="catalogue">[m
+             <div class="produit">[m
+[31m-                <img src="photos/Cauchon Blanc.jpeg" alt="Cauchon Blanc" class="produit-image">[m
+[32m+[m[32m                <img src="photos/cauchon-blanc.jpeg" alt="Cauchon Blanc" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>Cauchon Blanc</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">Cauchon Blanc Andu-xara</p>[m
+[31m-                    <div class="prix">549 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">549 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/Ensemble Capuchon gris.jpeg" alt="Ensemble Capuchon Gris" class="produit-image">[m
+[32m+[m[32m                <img src="photos/ensemble-capuchon-gris.jpeg" alt="Ensemble Capuchon Gris" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>Ensemble Capuchon Gris</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">Ensemble capuchon gris premium</p>[m
+[31m-                    <div class="prix">950 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">950 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/Ensemble Capuchon noir fr.jpeg" alt="Ensemble Capuchon Noir FR" class="produit-image">[m
+[32m+[m[32m                <img src="photos/ensemble-capuchon-noir-fr.jpeg" alt="Ensemble Capuchon Noir FR" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>Ensemble Capuchon Noir FR</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">Ensemble capuchon noir français</p>[m
+[31m-                    <div class="prix">950 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">950 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/Ensemble pull blanc jogging noir et Capuchon.jpeg" alt="Pull Blanc Jogging Noir" class="produit-image">[m
+[32m+[m[32m                <img src="photos/ensemble-pull-blanc-jogging-noir.jpeg" alt="Pull Blanc Jogging Noir" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>Pull Blanc Jogging Noir</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">Ensemble pull blanc + jogging noir</p>[m
+[31m-                    <div class="prix">749 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">749 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/Pull Bleu .jpeg" alt="Pull Bleu" class="produit-image">[m
+[32m+[m[32m                <img src="photos/pull-bleu.jpeg" alt="Pull Bleu" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>Pull Bleu</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">Pull bleu Andu-xara</p>[m
+[31m-                    <div class="prix">549 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">549 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/Pull et T-shirt combinés.jpeg" alt="Pull et T-shirt Combinés" class="produit-image">[m
+[32m+[m[32m                <img src="photos/pull-et-tshirt-combines.jpeg" alt="Pull et T-shirt Combinés" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>Pull et T-shirt Combinés</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">Ensemble pull + t-shirt combinés</p>[m
+[31m-                    <div class="prix">799 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">799 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/Tshirt Blanc et Jogging noir.jpeg" alt="T-shirt Blanc Jogging" class="produit-image">[m
+[32m+[m[32m                <img src="photos/tshirt-blanc-et-jogging-noir.jpeg" alt="T-shirt Blanc Jogging" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>T-shirt Blanc Jogging</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">T-shirt blanc + jogging noir</p>[m
+[31m-                    <div class="prix">699 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">699 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/t-shirt noir arabe.jpeg" alt="T-shirt Noir Arabe" class="produit-image">[m
+[32m+[m[32m                <img src="photos/tshirt-noir-arabe.jpeg" alt="T-shirt Noir Arabe" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>T-shirt Noir Arabe</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">T-shirt noir style arabe</p>[m
+[31m-                    <div class="prix">499 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">499 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/T-shirt noir logo arabe .jpeg" alt="T-shirt Noir Logo Arabe" class="produit-image">[m
+[32m+[m[32m                <img src="photos/tshirt-noir-logo-arabe-1.jpeg" alt="T-shirt Noir Logo Arabe" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>T-shirt Noir Logo Arabe</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">T-shirt noir logo arabe</p>[m
+[31m-                    <div class="prix">499 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">499 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/T-shirt noir logo arabe.jpeg" alt="T-shirt Noir Logo" class="produit-image">[m
+[32m+[m[32m                <img src="photos/tshirt-noir-logo-arabe-2.jpeg" alt="T-shirt Noir Logo" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>T-shirt Noir Logo</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">T-shirt noir avec logo</p>[m
+[31m-                    <div class="prix">499 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">499 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/t-shirt noir logo avec motif.jpeg" alt="T-shirt Noir Motif" class="produit-image">[m
+[32m+[m[32m                <img src="photos/tshirt-noir-avec-motif.jpeg" alt="T-shirt Noir Motif" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>T-shirt Noir Motif</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">T-shirt noir avec motif</p>[m
+[31m-                    <div class="prix">559 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[32m+[m[32m                    <div class="prix">559 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ [m
+             <div class="produit">[m
+[31m-                <img src="photos/T-shrt Enfant.jpeg" alt="T-shirt Enfant" class="produit-image">[m
+[32m+[m[32m                <img src="photos/tshirt-enfant.jpeg" alt="T-shirt Enfant" class="produit-image">[m
+                 <div class="produit-content">[m
+                     <h2>T-shirt Enfant</h2>[m
+                     <p class="reference">Référence: ADX</p>[m
+                     <p class="description">T-shirt Andu-xara enfant</p>[m
+[31m-                    <div class="prix">359 MRU UM</div>[m
+[31m-                </div>[m
+[31m-            </div>[m
+[31m-        </div>[m
+[32m+[m[32m                    <div class="prix">359 MRU UM</div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m                </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m            </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m        </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+         [m
+         <div class="footer">[m
+             <p>© 2025 Andu-xara - Tous droits réservés</p>[m
+[36m@@ -386,7 +401,7 @@[m
+                 etc.[m
+             </p>[m
+             <p>Collection de luxe et d'exception</p>[m
+[31m-        </div>[m
+[31m-    </div>[m
+[32m+[m[32m        </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+[32m+[m[32m    </div>\n                    <a href="https://wa.me/22249037697?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20ce%20produit%20(Andu-xara)" class="bouton-commander" target="_blank">💬 Commander sur WhatsApp</a>[m
+ </body>[m
+ </html>[m
+[1mdiff --git a/photos/Cauchon Blanc.jpeg b/photos/Cauchon Blanc.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex e511689..0000000[m
+Binary files a/photos/Cauchon Blanc.jpeg and /dev/null differ
+[1mdiff --git a/photos/Ensemble Capuchon gris.jpeg b/photos/Ensemble Capuchon gris.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 6177ad5..0000000[m
+Binary files a/photos/Ensemble Capuchon gris.jpeg and /dev/null differ
+[1mdiff --git a/photos/Ensemble Capuchon noir fr.jpeg b/photos/Ensemble Capuchon noir fr.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 6b091cd..0000000[m
+Binary files a/photos/Ensemble Capuchon noir fr.jpeg and /dev/null differ
+[1mdiff --git a/photos/Ensemble Capuchon noir logo Arabe.jpeg b/photos/Ensemble Capuchon noir logo Arabe.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 35f51ab..0000000[m
+Binary files a/photos/Ensemble Capuchon noir logo Arabe.jpeg and /dev/null differ
+[1mdiff --git a/photos/Ensemble pull blanc jogging noir et Capuchon.jpeg b/photos/Ensemble pull blanc jogging noir et Capuchon.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex f510462..0000000[m
+Binary files a/photos/Ensemble pull blanc jogging noir et Capuchon.jpeg and /dev/null differ
+[1mdiff --git a/photos/Pull Bleu .jpeg b/photos/Pull Bleu .jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 39bde39..0000000[m
+Binary files a/photos/Pull Bleu .jpeg and /dev/null differ
+[1mdiff --git "a/photos/Pull et T-shirt combin\303\251s.jpeg" "b/photos/Pull et T-shirt combin\303\251s.jpeg"[m
+[1mdeleted file mode 100644[m
+[1mindex 2e65df7..0000000[m
+Binary files "a/photos/Pull et T-shirt combin\303\251s.jpeg" and /dev/null differ
+[1mdiff --git a/photos/T-shirt blanc jogging noir .jpeg b/photos/T-shirt blanc jogging noir .jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 4b790c2..0000000[m
+Binary files a/photos/T-shirt blanc jogging noir .jpeg and /dev/null differ
+[1mdiff --git a/photos/T-shirt noir logo arabe .jpeg b/photos/T-shirt noir logo arabe .jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex eab50e8..0000000[m
+Binary files a/photos/T-shirt noir logo arabe .jpeg and /dev/null differ
+[1mdiff --git a/photos/T-shirt noir logo arabe.jpeg b/photos/T-shirt noir logo arabe.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 6efc399..0000000[m
+Binary files a/photos/T-shirt noir logo arabe.jpeg and /dev/null differ
+[1mdiff --git a/photos/T-shrt Enfant.jpeg b/photos/T-shrt Enfant.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 07ef3ac..0000000[m
+Binary files a/photos/T-shrt Enfant.jpeg and /dev/null differ
+[1mdiff --git a/photos/Tshirt Blanc et Jogging noir.jpeg b/photos/Tshirt Blanc et Jogging noir.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex bb712c4..0000000[m
+Binary files a/photos/Tshirt Blanc et Jogging noir.jpeg and /dev/null differ
+[1mdiff --git a/photos/Tshirt Blanc et Jogging noir.jpeg 2 b/photos/Tshirt Blanc et Jogging noir.jpeg 2[m
+[1mdeleted file mode 100644[m
+[1mindex bb712c4..0000000[m
+Binary files a/photos/Tshirt Blanc et Jogging noir.jpeg 2 and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-08-24 at 02.38.46.jpeg b/photos/WhatsApp Image 2025-08-24 at 02.38.46.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 50fb47c..0000000[m
+Binary files a/photos/WhatsApp Image 2025-08-24 at 02.38.46.jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-08-31 at 22.24.36(2).jpeg b/photos/WhatsApp Image 2025-08-31 at 22.24.36(2).jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 4272239..0000000[m
+Binary files a/photos/WhatsApp Image 2025-08-31 at 22.24.36(2).jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.19.51.jpeg b/photos/WhatsApp Image 2025-09-02 at 22.19.51.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 00475ea..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.19.51.jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.19.53.jpeg b/photos/WhatsApp Image 2025-09-02 at 22.19.53.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 8230408..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.19.53.jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.19.54(1).jpeg b/photos/WhatsApp Image 2025-09-02 at 22.19.54(1).jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex a0fa473..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.19.54(1).jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.19.55.jpeg b/photos/WhatsApp Image 2025-09-02 at 22.19.55.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 6b091cd..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.19.55.jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.19.56(3).jpeg b/photos/WhatsApp Image 2025-09-02 at 22.19.56(3).jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 9ddd6b2..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.19.56(3).jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.19.57(1).jpeg b/photos/WhatsApp Image 2025-09-02 at 22.19.57(1).jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex da9c38b..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.19.57(1).jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.19.58(1).jpeg b/photos/WhatsApp Image 2025-09-02 at 22.19.58(1).jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex de05e91..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.19.58(1).jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.19.58.jpeg b/photos/WhatsApp Image 2025-09-02 at 22.19.58.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 7a2d14d..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.19.58.jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.19.59(1).jpeg b/photos/WhatsApp Image 2025-09-02 at 22.19.59(1).jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 86b8b55..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.19.59(1).jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.19.59.jpeg b/photos/WhatsApp Image 2025-09-02 at 22.19.59.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 36b605b..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.19.59.jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.20.00(1).jpeg b/photos/WhatsApp Image 2025-09-02 at 22.20.00(1).jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 6459b90..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.20.00(1).jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.20.00.jpeg b/photos/WhatsApp Image 2025-09-02 at 22.20.00.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex f30bc7e..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.20.00.jpeg and /dev/null differ
+[1mdiff --git a/photos/WhatsApp Image 2025-09-02 at 22.20.01.jpeg b/photos/WhatsApp Image 2025-09-02 at 22.20.01.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 617b30b..0000000[m
+Binary files a/photos/WhatsApp Image 2025-09-02 at 22.20.01.jpeg and /dev/null differ
+[1mdiff --git a/photos/t-shirt noir arabe.jpeg b/photos/t-shirt noir arabe.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 81913a1..0000000[m
+Binary files a/photos/t-shirt noir arabe.jpeg and /dev/null differ
+[1mdiff --git a/photos/t-shirt noir logo avec motif.jpeg b/photos/t-shirt noir logo avec motif.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 759bce5..0000000[m
+Binary files a/photos/t-shirt noir logo avec motif.jpeg and /dev/null differ

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ANDU XARA</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TZ69QHQTY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6TZ69QHQTY');
+    </script>
+
+    <!-- Meta SEO Spécifique Contact -->
+    <meta name="description" content="Contactez ANDU XARA - Commandes, livraison, questions. WhatsApp: +22249037697, Email: anduxara2408@gmail.com - Livraison Mauritanie, Sénégal, France">
+    <meta name="keywords" content="contact andu xara, commande vêtements, livraison mauritanie, whatsapp andu xara, téléphone andu xara">
+    <meta name="author" content="ANDU XARA">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://andu-xara.github.io/catalogue-andu-xara-2025-final/contact.html">
+    <meta property="og:title" content="Contact - ANDU XARA">
+    <meta property="og:description" content="Contactez ANDU XARA pour vos commandes et questions. Livraison internationale.">
+    <meta property="og:image" content="https://andu-xara.github.io/catalogue-andu-xara-2025-final/photos/Cauchon%20Blanc.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://andu-xara.github.io/catalogue-andu-xara-2025-final/contact.html">
+    <meta property="twitter:title" content="Contact - ANDU XARA">
+    <meta property="twitter:description" content="Contactez ANDU XARA pour vos commandes et questions. Livraison internationale.">
+    <meta property="twitter:image" content="https://andu-xara.github.io/catalogue-andu-xara-2025-final/photos/Cauchon%20Blanc.jpeg">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .success-message {
+            display: none;
+            background: #27ae60;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📧 Contactez-nous</h1>
+
+        <div id="success-message" class="success-message">
+            ✅ Message envoyé avec succès ! Nous vous répondrons rapidement.
+        </div>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Nom complet *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+222 49037697">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Sujet *</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Choisissez un sujet</option>
+                    <option value="commande">Commande produit</option>
+                    <option value="livraison">Livraison</option>
+                    <option value="retour">Retour produit</option>
+                    <option value="question">Question générale</option>
+                    <option value="partenariat">Partenariat</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="Décrivez votre demande en détail..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">📤 Envoyer le message</button>
+        </form>
+
+        <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+            <h3>📞 Contact direct</h3>
+            <p>📱 WhatsApp: <a href="https://wa.me/22249037697">+222 49037697</a></p>
+            <p>📞 Téléphone: <a href="tel:+221762821163">+221 762821163</a></p>
+            <p>📧 Email: <a href="mailto:anduxara2408@gmail.com">anduxara2408@gmail.com</a></p>
+        </div>
+
+        <a href="index.html" class="back-btn">← Retour à l'accueil</a>
+    </div>
+
+    <script>
+    // ===== FORMULAIRE DE CONTACT =====
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Récupérer les données du formulaire
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value
+        };
+
+        // Envoyer par email (utilisation de FormSubmit)
+        const formAction = 'https://formsubmit.co/anduxara2408@gmail.com';
+        
+        // Créer un formulaire temporaire pour l'envoi
+        const tempForm = document.createElement('form');
+        tempForm.action = formAction;
+        tempForm.method = 'POST';
+        tempForm.style.display = 'none';
+
+        // Ajouter les champs
+        const fields = {
+            '_subject': `Nouveau message ANDU XARA: ${formData.subject}`,
+            'name': formData.name,
+            'email': formData.email,
+            'phone': formData.phone,
+            'message': `Sujet: ${formData.subject}\n\nMessage: ${formData.message}`,
+            '_template': 'table',
+            '_captcha': 'false'
+        };
+
+        for (const [key, value] of Object.entries(fields)) {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = key;
+            input.value = value;
+            tempForm.appendChild(input);
+        }
+
+        document.body.appendChild(tempForm);
+        tempForm.submit();
+
+        // Message de succès
+        document.getElementById('success-message').style.display = 'block';
+        document.getElementById('contact-form').reset();
+        
+        // Cacher le message après 5 secondes
+        setTimeout(() => {
+            document.getElementById('success-message').style.display = 'none';
+        }, 5000);
+    });
+    </script>
+</body>
+</html>

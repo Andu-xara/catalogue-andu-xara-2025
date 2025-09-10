@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Culturel Andu-Xara</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .quiz-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .quiz-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .quiz-step {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #eee;
+            border-radius: 15px;
+        }
+        
+        .question {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .options {
+            display: grid;
+            gap: 12px;
+            margin: 20px 0;
+        }
+        
+        .option {
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            text-align: left;
+        }
+        
+        .option:hover {
+            border-color: #667eea;
+            background: #f8f9ff;
+            transform: translateY(-2px);
+        }
+        
+        .selected {
+            border-color: #25D366;
+            background: #f0fff4;
+        }
+        
+        .quiz-btn {
+            background: #25D366;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .quiz-btn:hover:not(:disabled) {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+        
+        .quiz-btn:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .share-section {
+            background: #fffaf0;
+            border: 2px solid #FFD700;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .winner-section {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border: 3px solid #25D366;
+        }
+        
+        .share-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .share-btn {
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .share-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+        }
+        
+        .facebook-btn {
+            background: #3b5998;
+            color: white;
+        }
+        
+        .instagram-btn {
+            background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+            color: white;
+        }
+        
+        .tiktok-btn {
+            background: #000000;
+            color: white;
+        }
+        
+        .success-badge {
+            background: #25D366;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        .contest-number {
+            font-size: 1.5em;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 10px 0;
+            padding: 15px;
+            border: 2px dashed #e74c3c;
+            border-radius: 10px;
+            background: #fffaf0;
+        }
+        
+        .cultural-note {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .share-buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- ÉTAPE 1 : QUIZ CULTUREL -->
+        <div class="quiz-header">
+            <h1>🎯 QUIZ CULTUREL ANDU-XARA</h1>
+            <p>Découvrez la richesse des cultures ouest-africaines</p>
+        </div>
+        
+        <div id="step1" class="quiz-step">
+            <h2>📝 Question 1/4 - Culture Générale</h2>
+            <div class="question">
+                <h3>Quelle est la signification de "Andu-Xara" en langue Soninké ?</h3>
+            </div>
+            <div class="options">
+                <div class="option" onclick="selectAnswer(1, 'force')">La force du guerrier</div>
+                <div class="option" onclick="selectAnswer(1, 'beaute')">La beauté éternelle</div>
+                <div class="option" onclick="selectAnswer(1, 'sagesse')">La sagesse ancestrale</div>
+                <div class="option" onclick="selectAnswer(1, 'patrimoine')">Le patrimoine culturel</div>
+                <div class="option" onclick="selectAnswer(1, 'connaissance')">La connaissance de soi</div>
+            </div>
+            <p class="cultural-note">Le Soninké est une langue mandée parlée en Mauritanie, Mali, Sénégal, Gambie</p>
+        </div>
+        
+        <div id="step2" class="quiz-step hidden">
+            <h2>📝 Question 2/4 - Philosophie</h2>
+            <div class="question">
+                <h3>Que représente le concept "Xara" dans la philosophie Andu-Xara ?</h3>
+            </div>
+            <div class="options">
+                <div class="option" onclick="selectAnswer(2, 'luxe')">Le luxe et le prestige</div>
+                <div class="option" onclick="selectAnswer(2, 'tradition')">La tradition pure</div>
+                <div class="option" onclick="selectAnswer(2, 'modernite')">La modernité africaine</div>
+                <div class="option" onclick="selectAnswer(2, 'harmonie')">L'harmonie identitaire</div>
+                <div class="option" onclick="selectAnswer(2, 'unite')">L'unité culturelle</div>
+            </div>
+            <p class="cultural-note">Xara symbolise l'équilibre entre héritage et innovation</p>
+        </div>
+        
+        <div id="step3" class="quiz-step hidden">
+            <h2>📝 Question 3/4 - Inspiration Culturelle</h2>
+            <div class="question">
+                <h3>Quelles cultures influencent principalement les motifs Andu-Xara ?</h3>
+            </div>
+            <div class="options">
+                <div class="option" onclick="selectAnswer(3, 'arabe')">La culture arabo-andalouse uniquement</div>
+                <div class="option" onclick="selectAnswer(3, 'peule')">La culture peule et toucouleur uniquement</div>
+                <div class="option" onclick="selectAnswer(3, 'multiculturelle')">Un mélange wolof, halpulaar, soninké, hassanya et arabe</div>
+                <div class="option" onclick="selectAnswer(3, 'mandingue')">La culture mandingue exclusivement</div>
+                <div class="option" onclick="selectAnswer(3, 'occidentale')">Les tendances occidentales modernes</div>
+            </div>
+            <p class="cultural-note">Inspiration transsaharienne et multi-ethnique de la Mauritanie et du Sénégal</p>
+        </div>
+        
+        <div id="step4" class="quiz-step hidden">
+            <h2>📝 Question 4/4 - Langue Peul</h2>
+            <div class="question">
+                <h3>Comment dit-on "Andu-Xara" en Haalpulaar ?</h3>
+            </div>
+            <div class="options">
+                <div class="option" onclick="selectAnswer(4, 'xam-sabopp')">Xam-Sabopp</div>
+                <div class="option" onclick="selectAnswer(4, 'andu-hoorema')">Andu-Hoorema</div>
+                <div class="option" onclick="selectAnswer(4, 'arav-raassak')">Arav-Raassak</div>
+                <div class="option" onclick="selectAnswer(4, 'gandal-ngurndaam')">Gandal-Ngurndaam</div>
+                <div class="option" onclick="selectAnswer(4, 'ndimaagu')">Ndimaagu</div>
+            </div>
+            <p class="cultural-note">Le Haalpulaar (Pulaar) est la langue peule parlée en Mauritanie, Sénégal, Mali, Guinée</p>
+        </div>
+        
+        <!-- ÉTAPE 2 : COORDONNÉES -->
+        <div id="step5" class="quiz-step hidden">
+            <h2>📋 Vos informations</h2>
+            <p>Remplissez vos coordonnées pour finaliser votre participation</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 15px; margin: 20px 0;">
+                <input type="text" id="userName" placeholder="Votre nom complet" style="padding: 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px;">
+                <input type="tel" id="userPhone" placeholder="Votre numéro WhatsApp *" style="padding: 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px;">
+                <input type="email" id="userEmail" placeholder="Votre email" style="padding: 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px;">
+            </div>
+            
+            <button class="quiz-btn" onclick="validateInfo()">🎯 Suivant →</button>
+        </div>
+        
+        <!-- ÉTAPE 3 : PARTAGE OBLIGATOIRE -->
+        <div id="step6" class="quiz-step hidden">
+            <h2>📢 Partage Requis</h2>
+            <div class="share-section">
+                <p>⚠️ <strong>PARTAGEZ SUR 1 RÉSEAU MINIMUM</strong></p>
+                <p>Partagez le concours pour valider votre participation et augmenter vos chances !</p>
+            </div>
+            
+            <div class="share-buttons">
+                <button class="share-btn whatsapp-btn" onclick="shareOnPlatform('whatsapp')">
+                    📱 WhatsApp
+                </button>
+                <button class="share-btn facebook-btn" onclick="shareOnPlatform('facebook')">
+                    📘 Facebook
+                </button>
+                <button class="share-btn instagram-btn" onclick="shareOnPlatform('instagram')">
+                    📸 Instagram
+                </button>
+                <button class="share-btn tiktok-btn" onclick="shareOnPlatform('tiktok')">
+                    🎵 TikTok
+                </button>
+            </div>
+            
+            <p id="shareStatus" style="color: #e74c3c; font-weight: bold; margin: 20px 0;">
+                ❌ Partage non effectué (0/4)
+            </p>
+            
+            <button class="quiz-btn" id="finalBtn" disabled onclick="finalizeParticipation()">
+                🎯 Finaliser ma participation
+            </button>
+        </div>
+        
+        <!-- ÉTAPE 4 : CONFIRMATION -->
+        <div id="step7" class="quiz-step hidden winner-section">
+            <h2>🎉 FÉLICITATIONS !</h2>
+            <p>Votre participation au concours est confirmée !</p>
+            
+            <div class="contest-number" id="contestNumber">
+                Chargement...
+            </div>
+            
+            <p>📅 <strong>Tirage au sort chaque vendredi à 18h</strong></p>
+            <p>📞 Le gagnant sera contacté sur WhatsApp</p>
+            
+            <div class="share-buttons">
+                <button class="share-btn whatsapp-btn" onclick="shareVictory()">
+                    📱 Partager ma participation
+                </button>
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee;">
+            <a href="https://andu-xara.github.io/catalogue-andu-xara-2025-final/" style="
+                display: inline-block;
+                background: #667eea;
+                color: white;
+                padding: 12px 25px;
+                border-radius: 25px;
+                text-decoration: none;
+                font-weight: bold;
+            ">← Retour à la Boutique</a>
+        </div>
+    </div>
+
+    <script>
+    let answers = {};
+    let userInfo = {};
+    let sharesCount = 0;
+    let contestNumber = '';
+    const correctAnswers = {
+        1: 'connaissance',        // Andu-Xara en Soninké = La connaissance de soi
+        2: 'harmonie',           // Xara = L'harmonie identitaire
+        3: 'multiculturelle',    // Inspiration = Mélange wolof, halpulaar, soninké, hassanya, arabe
+        4: 'andu-hoorema'        // Andu-Xara en Haalpulaar = Andu-Hoorema
+    };
+    
+    function selectAnswer(questionNumber, answer) {
+        answers[questionNumber] = answer;
+        
+        // Style visuel
+        const options = document.querySelectorAll(`#step${questionNumber} .option`);
+        options.forEach(opt => {
+            opt.classList.remove('selected');
+            if (opt.textContent.includes(answer) || answers[questionNumber] === answer) {
+                opt.classList.add('selected');
+            }
+        });
+        
+        // Passer à la question suivante après 1 seconde
+        setTimeout(() => {
+            if (questionNumber < 4) {
+                document.getElementById(`step${questionNumber}`).classList.add('hidden');
+                document.getElementById(`step${questionNumber + 1}`).classList.remove('hidden');
+            } else {
+                // Quiz terminé, passer aux coordonnées
+                document.getElementById('step4').classList.add('hidden');
+                document.getElementById('step5').classList.remove('hidden');
+            }
+        }, 1000);
+    }
+    
+    function validateInfo() {
+        const name = document.getElementById('userName').value;
+        const phone = document.getElementById('userPhone').value;
+        const email = document.getElementById('userEmail').value;
+        
+        if (!name || !phone) {
+            alert('❌ Veuillez remplir au moins votre nom et numéro WhatsApp !');
+            return;
+        }
+        
+        userInfo = { name, phone, email };
+        
+        // Générer numéro de participation
+        contestNumber = 'AX-' + Math.random().toString(36).substr(2, 8).toUpperCase();
+        
+        document.getElementById('step5').classList.add('hidden');
+        document.getElementById('step6').classList.remove('hidden');
+    }
+    
+    function shareOnPlatform(platform) {
+        const shareUrl = "https://andu-xara.github.io/catalogue-andu-xara-2025-final/concours.html";
+        let shareText = "";
+        
+        switch(platform) {
+            case 'whatsapp':
+                shareText = `🎯 QUIZ CULTUREL ANDU-XARA ! 🛍️\n\nJe découvre les significations profondes :\n• Andu-Xara en Soninké : Connaissance de soi\n• En Haalpulaar : Andu-Hoorema\n• Inspiration multi-culturelle ouest-africaine\n\nTestez votre culture : ${shareUrl}\n\n#AnduXara #CultureAfricaine #Langues`;
+                window.open(`https://wa.me/?text=${encodeURIComponent(shareText)}`, '_blank');
+                break;
+            case 'facebook':
+                shareText = "Je découvre les significations culturelles d'Andu-Xara à travers un quiz passionnant !";
+                window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(shareText)}`, '_blank');
+                break;
+            case 'instagram':
+                shareText = "🎯 Andu-Xara : Connaissance de soi en Soninké, Andu-Hoorema en Peul ✨\n\nJe découvre la richesse culturelle derrière cette marque 💫\n\n➡️ andu-xara.github.io\n\n@andu_xara #CultureAfricaine #AnduXara";
+                alert("📸 Copiez ce message pour votre story Instagram:\n\n" + shareText);
+                break;
+            case 'tiktok':
+                shareText = "Découvrez les secrets linguistiques d'Andu-Xara ! #CultureAfricaine #Langues #AnduXara #Soninké #Peul";
+                alert("🎵 Copiez ce message pour votre TikTok:\n\n" + shareText + "\n\nLien: " + shareUrl);
+                break;
+        }
+        
+        // Compter les partages
+        sharesCount++;
+        document.getElementById('shareStatus').innerHTML = 
+            `✅ ${sharesCount} partage(s) effectué(s) <span class="success-badge">+${sharesCount} chance(s)</span>`;
+        document.getElementById('shareStatus').style.color = '#25D366';
+        document.getElementById('finalBtn').disabled = false;
+        
+        if (sharesCount === 1) {
+            setTimeout(() => {
+                alert('✅ Merci pour le partage ! Vos chances de gagner sont augmentées 🍀\n\nPartagez sur d\'autres réseaux pour encore plus de chances !');
+            }, 1000);
+        }
+    }
+    
+    function finalizeParticipation() {
+        if (sharesCount === 0) {
+            alert('❌ Vous devez partager le concours sur au moins 1 réseau pour participer !');
+            return;
+        }
+        
+        // Calculer le score
+        let score = 0;
+        for (let i = 1; i <= 4; i++) {
+            if (answers[i] === correctAnswers[i]) score++;
+        }
+        
+        // Envoyer les infos à Andu-Xara
+        sendParticipation(score);
+        
+        // Afficher confirmation
+        document.getElementById('contestNumber').textContent = contestNumber;
+        document.getElementById('step6').classList.add('hidden');
+        document.getElementById('step7').classList.remove('hidden');
+    }
+    
+    function sendParticipation(score) {
+        const subject = "🎯 NOUVEAU PARTICIPANT QUIZ CULTUREL";
+        const body = `QUIZ CULTUREL ANDU-XARA - NOUVEAU PARTICIPANT !\n\n📋 Nom: ${userInfo.name}\n📱 WhatsApp: ${userInfo.phone}\n📧 Email: ${userInfo.email || 'Non renseigné'}\n🎯 Score: ${score}/4\n🎫 Numéro: ${contestNumber}\n📢 Partages: ${sharesCount} réseau(x)\n⏰ Date: ${new Date().toLocaleString()}\n\n📞 CONTACT: https://wa.me/${userInfo.phone.replace(/[^0-9]/g, '')}`;
+        
+        // Envoyer email
+        window.location.href = `mailto:anduxara2408@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+    
+    function shareVictory() {
+        const shareText = `🎯 JE VIENS DE DÉCOUVRIR LES SECRETS LINGUISTIQUES D'ANDU-XARA ! 🛍️\n\n• Andu-Xara en Soninké = Connaissance de soi\n• En Haalpulaar = Andu-Hoorema\n• Inspiration multi-culturelle ouest-africaine\n\nNuméro de participation: ${contestNumber}\n\nTestez vos connaissances : https://andu-xara.github.io/catalogue-andu-xara-2025-final/concours.html\n\n#AnduXara #CultureAfricaine #Langues`;
+        window.open(`https://wa.me/?text=${encodeURIComponent(shareText)}`, '_blank');
+    }
+    </script>
+</body>
+</html>
