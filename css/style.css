@@ -10,3 +10,11 @@ button.whatsapp-btn:hover {
     background-color: #128C7E;
     cursor: pointer;
 }
+
+/* Fix pour le défilement sur mobile */
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto !important;
+  min-height: 100vh;
+}
