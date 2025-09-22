@@ -18,3 +18,14 @@ html, body {
   height: auto !important;
   min-height: 100vh;
 }
+/* Plan B - débloquer le scroll sur mobile */
+* {
+  overscroll-behavior: auto !important;
+}
+
+body, main, .container, .product-grid {
+  position: relative !important;
+  overflow-y: auto !important;
+  height: auto !important;
+  min-height: 100vh !important;
+}
