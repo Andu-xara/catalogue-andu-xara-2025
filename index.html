@@ -2777,30 +2777,32 @@ addToCartButtons.forEach(button => {
         </p>
     </div>
 <script>
-    // Date de fin de la promotion
-    const promoEndDate = new Date("2025-09-25T23:59:59").getTime();
+  // Compteur ADX : démarre à partir de maintenant pour 20 jours
+  const startDate = new Date().getTime();
+  const duration = 20 * 24 * 60 * 60 * 1000; // 20 jours en millisecondes
+  const endDate = startDate + duration;
 
-    const countdownInterval = setInterval(() => {
-        const now = new Date().getTime();
-        const distance = promoEndDate - now;
+  const countdown = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = endDate - now;
 
-        if (distance < 0) {
-            clearInterval(countdownInterval);
-            document.getElementById("countdown").innerHTML = "Promotion terminée !";
-            return;
-        }
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+    document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+    document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+    document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
 
-        document.getElementById("days").textContent = days.toString().padStart(2, '0');
-        document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
-        document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
-        document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
-    }, 1000);
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.querySelector(".promo-countdown").innerHTML = "<h2>🎉 La promotion est terminée ! 🎉</h2>";
+    }
+  }, 1000);
 </script>
+        
 <!-- Section Légale -->
 <section class="legal-section">
     <h2>Informations Légales</h2>
