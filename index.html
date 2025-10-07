@@ -2922,6 +2922,33 @@ function toggleChat() {
     chatBox.style.display = (chatBox.style.display === "flex") ? "none" : "flex";
 }
 </script>
+<script>
+  // Dès que le script charge, on initialise le compteur à 20 jours
+  const duration = 20 * 24 * 60 * 60 * 1000; // 20 jours en millisecondes
+  let endDate = new Date().getTime() + duration; // Date de fin = maintenant + 20 jours
 
+  const countdown = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = endDate - now;
+
+    // Calcul des jours, heures, minutes, secondes
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Mettre à jour le HTML
+    document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+    document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+    document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+    document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+
+    // Quand le compteur arrive à zéro
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.querySelector(".promo-countdown").innerHTML = "<h2>🎉 La promotion est terminée ! 🎉</h2>";
+    }
+  }, 1000);
+</script>
 </body>
 </html>
