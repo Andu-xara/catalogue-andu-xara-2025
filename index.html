@@ -2950,5 +2950,98 @@ function toggleChat() {
     }
   }, 1000);
 </script>
+<!-- ===== Compteur Promotion ===== -->
+<div class="promo-countdown">
+  <h2>🔥 Promotion ADX — Offre Limitée ! 🔥</h2>
+  <div id="countdown">
+    <span id="days">20</span>j :
+    <span id="hours">00</span>h :
+    <span id="minutes">00</span>m :
+    <span id="seconds">00</span>s
+  </div>
+</div>
+
+<style>
+.promo-countdown {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.promo-countdown h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+}
+
+#countdown span {
+    background: rgba(0,0,0,0.2);
+    padding: 15px 20px;
+    border-radius: 10px;
+    min-width: 60px;
+    display: inline-block;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+#countdown span:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    #countdown {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+</style>
+
+<script>
+  // Compteur promotion 20 jours
+  const duration = 20 * 24 * 60 * 60 * 1000; // 20 jours en ms
+  let endDate = new Date().getTime() + duration;
+
+  const countdown = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = endDate - now;
+
+    const days = Math.floor(distance / (1000*60*60*24));
+    const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+    const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+    const seconds = Math.floor((distance % (1000*60)) / 1000);
+
+    document.getElementById("days").innerText = days < 10 ? "0"+days : days;
+    document.getElementById("hours").innerText = hours < 10 ? "0"+hours : hours;
+    document.getElementById("minutes").innerText = minutes < 10 ? "0"+minutes : minutes;
+    document.getElementById("seconds").innerText = seconds < 10 ? "0"+seconds : seconds;
+
+    if(distance < 0){
+      clearInterval(countdown);
+      document.querySelector(".promo-countdown").innerHTML = "<h2>🎉 La promotion est terminée ! 🎉</h2>";
+    }
+  }, 1000);
+</script>
 </body>
 </html>
