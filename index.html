@@ -233,40 +233,89 @@ body {
 }
 
 
-/* ===== Compteur Promotion ===== */
+/* ===== Compteur Promotion Amélioré (ADX Style) ===== */
 .promo-countdown {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    background: rgba(255, 255, 255, 0.08); /* transparent léger */
     color: #fff;
     text-align: center;
-    padding: 30px 20px;
-    border-radius: 15px;
+    padding: 35px 20px;
+    border-radius: 20px;
     margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    max-width: 650px;
+    backdrop-filter: blur(8px); /* effet de verre */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-countdown:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.4);
 }
 
 .promo-countdown h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    animation: fadeIn 1.2s ease-in-out;
 }
 
+/* Zone des chiffres */
 #countdown {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 18px;
     font-size: 1.4rem;
 }
 
 #countdown span {
-    background: rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, #6c63ff, #00bcd4);
     padding: 15px 20px;
-    border-radius: 10px;
-    min-width: 60px;
+    border-radius: 12px;
+    min-width: 70px;
     display: inline-block;
     font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    animation: pulse 2.5s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+#countdown span:hover {
+    transform: scale(1.1);
+}
+
+/* ===== Animations ===== */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 10px rgba(108,99,255,0.5); }
+    50% { transform: scale(1.05); box-shadow: 0 0 20px rgba(0,188,212,0.6); }
+    100% { transform: scale(1); box-shadow: 0 0 10px rgba(108,99,255,0.5); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .promo-countdown {
+        padding: 25px 15px;
+    }
+
+    #countdown {
+        gap: 12px;
+        font-size: 1.1rem;
+    }
+
+    #countdown span {
+        padding: 12px 15px;
+        min-width: 55px;
+    }
+
+    .promo-countdown h2 {
+        font-size: 1.5rem;
+    }
 }
 
 .temoignages-section h2 {
